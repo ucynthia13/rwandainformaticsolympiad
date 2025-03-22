@@ -4,6 +4,7 @@ RIO is a national competition for high school students, promoting algorithmic an
 
 
 ## 🌐 Features  
+Includes & Will Include: 
 - 📢 Event updates & registration  
 - 🏅 Competition details & results  
 - 📚 Practice problems & resources  
@@ -11,5 +12,5 @@ RIO is a national competition for high school students, promoting algorithmic an
 ## 🔧 Setup  
 1. Clone & install:  
    ```sh
-   git clone https://github.com/your-repo/rio-website.git && cd rio-website  
+   git clone https://github.com/ucynthia13/rwandainformaticsolympiad.git && cd rwandainformaticsolympiad
    npm install

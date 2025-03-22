@@ -96,9 +96,10 @@ const About = () => {
         <div className="container mx-auto px-6">
           <div className="mb-12">
             <h1 className="text-3xl md:text-4xl font-bold text-olympiad-navy mb-4">
-              About
-              <span className="block mt-2">Rwanda Informatics Olympiad</span>
+              About RIO
             </h1>
+            <div className="h-1 w-16 bg-olympiad-blue mb-6"></div>
+
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
@@ -216,7 +217,8 @@ const About = () => {
                 </h2>
                 <p className="text-olympiad-gray mb-6">
                   The Informatics Olympiad is a competitive programming contest
-                  for secondary school students. Here's the flow of the competition:
+                  for secondary school students. Here's the flow of the
+                  competition:
                 </p>
                 <div className="space-y-4">
                   <div className="flex items-start">

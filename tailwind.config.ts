@@ -62,7 +62,7 @@ const config: Config = {
           ring: 'hsl(var(--sidebar-ring))'
         },
         olympiad: {
-          blue: '#7A9FEA',
+          blue: '#5F87D4',
           darkBlue: '#1E40AF',
           navy: '#0F172A',
           light: '#F8FAFC',

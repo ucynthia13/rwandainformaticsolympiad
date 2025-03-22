@@ -3,8 +3,8 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 
 export const metadata: Metadata = {
-  title: "AoMail",
-  description: "Your Email Provider",
+  title: "Rwanda Informatics Olympiad",
+  description: "Rwanda Informatics Olympiad",
 };
 
 const inter = Inter({ subsets: ["latin"] });

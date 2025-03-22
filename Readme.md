@@ -4,6 +4,7 @@ RIO is a national competition for high school students, promoting algorithmic an
 
 
 ## 🌐 Features  
+Includes & Will Include: 
 - 📢 Event updates & registration  
 - 🏅 Competition details & results  
 - 📚 Practice problems & resources  

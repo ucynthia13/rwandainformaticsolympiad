@@ -12,5 +12,5 @@ Includes & Will Include:
 ## 🔧 Setup  
 1. Clone & install:  
    ```sh
-   git clone https://github.com/your-repo/rio-website.git && cd rio-website  
+   git clone https://github.com/ucynthia13/rwandainformaticsolympiad.git && cd rwandainformaticsolympiad
    npm install

@@ -11,8 +11,8 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="relative min-h-screen flex flex-col justify-center overflow-hidden bg-gradient-to-b from-white to-blue-50">
-      <div className="absolute inset-0 bg-code-pattern opacity-10"></div>
+    <div className="relative min-h-screen flex flex-col justify-center overflow-hidden bg-[url('/assets/images/coaches.jpg')] bg-cover bg-center">
+      <div className="absolute inset-0 bg-gradient-to-r from-white to-blue-50/80"></div>
       <div className="container mx-auto px-6 pt-24 pb-16 md:pt-32 md:pb-24 relative z-10">
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 mb-10 md:mb-0 animate-fade-in">
@@ -50,48 +50,6 @@ const Hero = () => {
                 <div className="flex items-center space-x-2 text-olympiad-gray">
                   <Trophy className="h-6 w-6 text-olympiad-blue" />
                   <span>Global Recognition</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="md:w-1/2 flex justify-center md:justify-end animate-fade-in">
-            <div className="glass-card p-6 rounded-lg shadow-xl max-w-md w-full transform hover:translate-y-[-5px] transition-transform duration-300">
-              <div className="bg-olympiad-navy rounded-md p-4 overflow-hidden">
-                <div className="flex items-center mb-4">
-                  <div className="flex space-x-2">
-                    <div className="w-3 h-3 rounded-full bg-red-500"></div>
-                    <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
-                    <div className="w-3 h-3 rounded-full bg-green-500"></div>
-                  </div>
-                  <div className="ml-4 text-xs text-gray-400 font-mono">
-                    main.cpp
-                  </div>
-                </div>
-
-                <pre className="language-javascript font-mono text-sm leading-relaxed text-gray-100">
-                  <code>
-                    {`function solveOlympiad(p) {
-  // Analyze the problem
-   const cons = p.getConstraints();
-  const inpt = p.getInput();
-    
-  // Develop an algorithm
-  const sol = analyze(inpt, cons);
-    
-  // Optimize and test
-  return optimize(sol);
-}`}
-                  </code>
-                </pre>
-              </div>
-
-              <div className="mt-4 text-center">
-                <div className="text-olympiad-navy font-semibold">
-                  Ready to solve algorithmic challenges?
-                </div>
-                <div className="text-sm text-olympiad-gray mt-1">
-                  Practice with our resources
                 </div>
               </div>
             </div>

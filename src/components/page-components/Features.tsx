@@ -33,11 +33,11 @@ const Features = () => {
           </h2>
           <div className="h-1 w-20 bg-olympiad-blue mx-auto mb-6"></div>
           <p className="text-olympiad-gray text-lg">
-            Rwanda Informatics Olympiad (RIO) aims to promote excellence in
+            Rwanda Informatics Olympiad (RwIO) aims to promote excellence in
             algorithmic and programming competitions in Rwanda. It identifies
             and celebrates students with exceptional skills, preparing them to
             represent Rwanda at the International Olympiad in Informatics (IOI).
-            RIO Consists of the followings stages:
+            RwIO Consists of the followings stages:
           </p>
         </div>
 

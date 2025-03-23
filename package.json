@@ -24,7 +24,6 @@
     "axios": "^1.7.7",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
-    "inmail": "file:",
     "jotai": "^2.10.2",
     "lucide-react": "^0.456.0",
     "moment": "^2.30.1",

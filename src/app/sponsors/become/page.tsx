@@ -1,11 +1,11 @@
 import React from 'react'
 
-const TeamPage = () => {
+const BecomeSponsor = () => {
   return (
     <div>
-      Our Team
+      
     </div>
   )
 }
 
-export default TeamPage
+export default BecomeSponsor

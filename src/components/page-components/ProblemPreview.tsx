@@ -69,8 +69,8 @@ const ProblemPreview = () => {
           </h2>
           <div className="h-1 w-20 bg-olympiad-blue mb-6"></div>
           <p className="text-olympiad-gray text-lg max-w-3xl">
-            Explore our collection of algorithmic challenges used in previous
-            Olympiads. Practice with our provided resources to prepare for the
+            Explore our collection of algorithmic challenges used in Olympiads
+            preparation. Practice with our provided resources to prepare for the
             competition.
           </p>
         </div>
@@ -188,7 +188,7 @@ const ProblemPreview = () => {
                   </div>
                   <div className="bg-gray-50 rounded-lg p-4">
                     <h4 className="font-medium text-olympiad-navy mb-2">
-                      Sample Output
+                      Expected Output
                     </h4>
                     <pre className="font-mono text-sm bg-gray-100 p-3 rounded overflow-x-auto">
                       {problems[activeTab].sampleOutput}
@@ -218,9 +218,9 @@ const ProblemPreview = () => {
                 Ready to Challenge Yourself?
               </h3>
               <p className="text-olympiad-gray">
-                Join thousands of participants worldwide in the next Informatics
-                Olympiad. Registration is closed open for individuals and school
-                teams.
+                Join other competitive participants worldwide in the next
+                Informatics Olympiad. Registration is now closed for schools
+                registering their teams.
               </p>
 
               <Link

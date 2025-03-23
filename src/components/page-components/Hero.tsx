@@ -7,7 +7,6 @@ import Prism from "prismjs";
 
 const Hero = () => {
   useEffect(() => {
-    // Initialize Prism.js to apply syntax highlighting after component mounts
     Prism.highlightAll();
   }, []);
 
@@ -34,21 +33,21 @@ const Hero = () => {
                 <Link href="/register" className="btn-primary rounded-full">
                   School Registration
                 </Link>
-                <Link href="/problems" className="btn-outline rounded-full">
+                <Link href="/resources" className="btn-outline rounded-full">
                   Explore Problems
                 </Link>
               </div>
 
               <div className="mt-10 grid grid-cols-3 gap-4">
-                <div className="flex items-center space-x-2 text-olympiad-navy">
-                  <Brain className="h-8 w-8 text-olympiad-blue" />
+                <div className="flex items-center space-x-2 text-olympiad-gray">
+                  <Brain className="h-6 w-6 text-olympiad-blue" />
                   <span>Strategic Thinking</span>
                 </div>
-                <div className="flex items-center space-x-2 text-olympiad-navy">
+                <div className="flex items-center space-x-2 text-olympiad-gray">
                   <Code className="h-6 w-6 text-olympiad-blue" />
                   <span>Coding Excellence</span>
                 </div>
-                <div className="flex items-center space-x-2 text-olympiad-navy">
+                <div className="flex items-center space-x-2 text-olympiad-gray">
                   <Trophy className="h-6 w-6 text-olympiad-blue" />
                   <span>Global Recognition</span>
                 </div>
@@ -99,7 +98,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-
       <div className="separator absolute bottom-0 left-0 right-0">
         <svg
           xmlns="http://www.w3.org/2000/svg"

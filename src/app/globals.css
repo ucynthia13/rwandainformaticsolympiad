@@ -1,7 +1,17 @@
 @import "prismjs/themes/prism-tomorrow.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.font-sans {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    sans-serif;
+}
+
+.font-mono {
+  font-family: "JetBrains Mono", monospace;
+}
 
 @layer base {
   :root {
@@ -80,14 +90,6 @@
     @apply btn border border-olympiad-blue text-olympiad-blue hover:bg-olympiad-blue/10 px-6 py-3;
   }
 
-  .typing-effect {
-    @apply overflow-hidden whitespace-nowrap border-r-4 border-primary pr-1 animate-typing;
-  }
-
-  .code-span {
-    @apply font-mono font-medium text-olympiad-blue;
-  }
-
   .section-title {
     @apply text-3xl md:text-4xl font-bold text-olympiad-navy mb-6 relative;
   }
@@ -97,33 +99,7 @@
     @apply absolute bottom-0 left-0 w-20 h-1 bg-olympiad-blue mt-2;
   }
 
-  .staggered-appear {
-    @apply opacity-0;
-    animation: staggerAppear 0.5s ease forwards;
-    animation-delay: calc(var(--appear-delay) * 0.1s);
-  }
-
-  @keyframes staggerAppear {
-    0% {
-      opacity: 0;
-      transform: translateY(10px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
   .olympiad-transition {
     @apply transition-all duration-300 ease-in-out;
   }
-}
-
-.font-sans {
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    sans-serif;
-}
-
-.font-mono {
-  font-family: "JetBrains Mono", monospace;
 }

@@ -1,13 +1,9 @@
-"use client";
-
-import React, { useEffect } from "react";
+import React from "react";
 import Image from "next/image";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import Link from "next/link";
 import {
-  ArrowLeft,
-  CheckCircle,
   Calendar,
   Users,
   Award,
@@ -22,11 +18,8 @@ import {
 } from "lucide-react";
 
 const About = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
 
-  const timeline = [
+  const olympiadHistory = [
     {
       year: "1989",
       title: "First International Olympiad",
@@ -96,7 +89,7 @@ const About = () => {
         <div className="container mx-auto px-6">
           <div className="mb-12">
             <h1 className="text-3xl md:text-4xl font-bold text-olympiad-navy mb-4">
-              About RIO
+              About RwIO
             </h1>
             <div className="h-1 w-16 bg-olympiad-blue mb-6"></div>
 
@@ -146,7 +139,7 @@ const About = () => {
                       <Handshake className="h-5 w-5 text-olympiad-blue" />
                     </div>
                     <p className="text-olympiad-gray mb-6">
-                      At RIO, we value excellence, collaboration, education, and
+                      At RwIO, we value excellence, collaboration, education, and
                       impact. We set high standards, encourage teamwork, provide
                       quality education, and strive to positively influence
                       Rwandan youth and society.
@@ -160,12 +153,12 @@ const About = () => {
                   Eligibility
                 </h2>
                 <p className="text-olympiad-gray mb-6">
-                  The Rwanda Informatics Olympiad (RIO) is open to all high
+                  The Rwanda Informatics Olympiad (RwIO) is open to all high
                   school students across Rwanda, regardless of their school
                   affiliation. There is no lower age limit for participation.
                   However, the following conditions apply:
                 </p>
-                <div className="space-y-4">
+                <div className="space-y-6">
                   <div className="flex items-start">
                     <div className="bg-blue-100 rounded-full p-2 mr-4 mt-1">
                       <School className="h-5 w-5 text-olympiad-blue" />
@@ -189,7 +182,7 @@ const About = () => {
                         No Age restrictions:
                       </h3>
                       <p className="text-olympiad-gray">
-                        There's no minimum age for participating in RIO.
+                        There's no minimum age for participating in RwIO.
                       </p>
                     </div>
                   </div>
@@ -290,19 +283,19 @@ const About = () => {
                 <div className="relative">
                   <div className="absolute top-0 bottom-0 left-5 border-l-2 border-dashed border-blue-200"></div>
                   <div className="space-y-8">
-                    {timeline.map((item, index) => (
+                    {olympiadHistory.map((history, index) => (
                       <div key={index} className="relative flex items-start">
                         <div className="absolute left-0 mt-1">
                           <div className="bg-olympiad-blue rounded-full w-11 h-11 flex items-center justify-center text-white font-bold text-[13px]">
-                            {item.year}
+                            {history.year}
                           </div>
                         </div>
                         <div className="ml-20">
                           <h3 className="font-semibold text-olympiad-navy text-lg">
-                            {item.title}
+                            {history.title}
                           </h3>
                           <p className="text-olympiad-gray">
-                            {item.description}
+                            {history.description}
                           </p>
                         </div>
                       </div>
@@ -375,7 +368,7 @@ const About = () => {
               <div className="hidden md:block">
                 <Image
                   src="#"
-                  alt="Olympiad"
+                  alt="Sponsor"
                   className="rounded-lg shadow-lg max-w-full"
                   width={80}
                   height={80}

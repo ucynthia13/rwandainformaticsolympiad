@@ -224,7 +224,7 @@ const ProblemPreview = () => {
               </p>
 
               <Link
-                href="/preparation"
+                href="/resources"
                 className="btn-outline rounded-full mt-6"
               >
                 Preparation Resources

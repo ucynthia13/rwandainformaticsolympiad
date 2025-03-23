@@ -8,7 +8,7 @@ import {
   Twitter,
   Facebook,
   Instagram,
-  Github,
+  Linkedin,
   ExternalLink,
 } from "lucide-react";
 
@@ -61,7 +61,7 @@ const Footer = () => {
                 className="bg-white/10 hover:bg-white/20 p-2 rounded-full transition-colors"
                 aria-label="GitHub"
               >
-                <Github size={18} />
+                <Linkedin size={18} />
               </a>
             </div>
           </div>
@@ -166,10 +166,10 @@ const Footer = () => {
               <li className="flex items-center">
                 <Phone className="h-5 w-5 text-olympiad-blue mr-3" />
                 <a
-                  href="tel:+11234567890"
+                  href="tel:+250794021594"
                   className="text-gray-300 hover:text-white transition-colors"
                 >
-                  One of the coaches's number
+                  Leave Us a Call
                 </a>
               </li>
             </ul>

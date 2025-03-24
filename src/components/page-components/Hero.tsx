@@ -18,13 +18,13 @@ const Hero = () => {
           <div className="md:w-1/2 mb-10 md:mb-0 animate-fade-in">
             <div className="max-w-xl">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-olympiad-navy leading-loose">
-                Rwanda's 
+                Rwanda&apos;s 
                 <span className="text-olympiad-blue bg-gradient-to-r from-olympiad-blue to-olympiad-blue/60 bg-clip-text text-transparent"> First </span>
                 Informatics Olympiad
               </h1>
 
               <p className="mt-8 text-lg text-olympiad-gray">
-                Join Rwanda's first informatics competition for high schoolers,
+                Join Rwanda&apos;s first informatics competition for high schoolers,
                 encouraging problem-solving skills and innovation in
                 programming, designed for young enthusiasts aged 20 and below.
               </p>

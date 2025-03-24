@@ -182,7 +182,7 @@ const About = () => {
                         No Age restrictions:
                       </h3>
                       <p className="text-olympiad-gray">
-                        There's no minimum age for participating in RwIO.
+                        There is no minimum age for participating in RwIO.
                       </p>
                     </div>
                   </div>
@@ -210,7 +210,7 @@ const About = () => {
                 </h2>
                 <p className="text-olympiad-gray mb-6">
                   The Informatics Olympiad is a competitive programming contest
-                  for secondary school students. Here's the flow of the
+                  for secondary school students. Here is the flow of the
                   competition:
                 </p>
                 <div className="space-y-4">
@@ -278,7 +278,7 @@ const About = () => {
             <div>
               <div className="glass-card rounded-lg p-8 mb-8">
                 <h2 className="text-2xl font-bold text-olympiad-navy mb-6">
-                  A bit of IO's History
+                  A bit of IO&apos;s History
                 </h2>
                 <div className="relative">
                   <div className="absolute top-0 bottom-0 left-5 border-l-2 border-dashed border-blue-200"></div>
@@ -351,7 +351,7 @@ const About = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
               <div className="md:col-span-2">
                 <h2 className="text-2xl md:text-3xl font-bold mb-4">
-                  Want to support this year's Olympiad?
+                  Want to support this year&apos;s Olympiad?
                 </h2>
                 <p className="mb-6">
                   Join our a journey to inspire the next generation of

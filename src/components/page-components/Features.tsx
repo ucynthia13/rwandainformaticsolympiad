@@ -1,6 +1,5 @@
 import React from "react";
 import { Users, Award, Calendar } from "lucide-react";
-import { cn } from "@/lib/utils";
 
 const Features = () => {
   const stages = [

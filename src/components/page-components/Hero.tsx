@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 import { Brain, Trophy, Code } from "lucide-react";
 import Link from "next/link";
 import Prism from "prismjs";

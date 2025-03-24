@@ -19,7 +19,7 @@ const Hero = () => {
             <div className="max-w-xl">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-olympiad-navy leading-normal">
                 Rwanda&apos;s 
-                <span className="text-olympiad-blue bg-gradient-to-r from-olympiad-blue to-olympiad-blue/60 bg-clip-text text-transparent"> First </span>
+                <span className="text-olympiad-blue bg-gradient-to-r from-olympiad-blue to-olympiad-blue/60 bg-clip-text text-transparent lg:leading-loose"> First </span>
                 Informatics Olympiad
               </h1>
 

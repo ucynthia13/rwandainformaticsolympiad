@@ -162,7 +162,7 @@ const ResourcePreview = () => {
                   </div>
                   <Link
                     href={`/problems/${problems[activeTab].id}`}
-                    className="btn-primary rounded-full text-sm px-4 py-2"
+                    className="btn-primary rounded-full px-4 py-2 text-xs md:text-sm"
                   >
                     Solve Problem
                   </Link>

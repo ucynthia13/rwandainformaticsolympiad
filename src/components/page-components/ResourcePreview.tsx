@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { ChevronRight, Clock, ArrowRight, Star, Brain } from "lucide-react";
 
-const ProblemPreview = () => {
+const ResourcePreview = () => {
   const [activeTab, setActiveTab] = useState(0);
 
   const problems = [
@@ -65,11 +65,11 @@ const ProblemPreview = () => {
       <div className="container mx-auto px-6">
         <div className="mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-olympiad-navy mb-4">
-            Sample Problem Archive
+            Sample Preparatory Problems
           </h2>
           <div className="h-1 w-20 bg-olympiad-blue mb-6"></div>
           <p className="text-olympiad-gray text-lg max-w-3xl">
-            Explore our collection of algorithmic challenges used in Olympiads
+            Explore our collection of algorithmic challenges mostly used in Olympiads
             preparation. Practice with our provided resources to prepare for the
             competition.
           </p>
@@ -245,4 +245,4 @@ const ProblemPreview = () => {
   );
 };
 
-export default ProblemPreview;
+export default ResourcePreview;

@@ -17,9 +17,9 @@ const Hero = () => {
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 mb-10 md:mb-0 animate-fade-in">
             <div className="max-w-xl">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-olympiad-navy leading-normal">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-olympiad-navy leading-normal lg:leading-loose">
                 Rwanda&apos;s 
-                <span className="text-olympiad-blue bg-gradient-to-r from-olympiad-blue to-olympiad-blue/60 bg-clip-text text-transparent lg:leading-loose"> First </span>
+                <span className="text-olympiad-blue bg-gradient-to-r from-olympiad-blue to-olympiad-blue/60 bg-clip-text text-transparent"> First </span>
                 Informatics Olympiad
               </h1>
 

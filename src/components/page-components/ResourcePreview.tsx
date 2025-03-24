@@ -230,7 +230,7 @@ const ResourcePreview = () => {
                 Preparation Resources
               </Link>
             </div>
-            <div className="md:w-1/3 flex justify-center">
+            <div className="hidden md:w-1/3 md:flex justify-center">
               <div className="relative">
                 <div className="absolute -inset-4 rounded-full bg-blue-100 opacity-50 animate-pulse"></div>
                 <div className="relative bg-white rounded-full p-5 shadow-lg">

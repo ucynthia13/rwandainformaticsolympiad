@@ -2,6 +2,11 @@
 
 RIO is a national competition for high school students, promoting algorithmic and programming excellence. Top performers qualify for the **International Olympiad in Informatics (IOI)**.  
 
+## 🌐 Live Website
+
+Visit the Rwanda Informatics Olympiad website here:  
+🔗 [https://rwandainformaticsolympiad.onrender.com](https://rwandainformaticsolympiad.onrender.com)
+
 
 ## 🌐 Features  
 Includes & Will Include: 

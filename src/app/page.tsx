@@ -6,8 +6,8 @@ import Footer from "@/components/page-components/Footer";
 import Team from "@/components/page-components/Sponsors";
 import Coaches from "@/components/page-components/Team";
 import Resources from "@/components/page-components/Resources";
-import RoadMap from "@/components/page-components/Roadmap";
-import Mission from "@/components/page-components/mission";
+import RoadMap from "@/components/page-components/RoadMap";
+import Mission from "@/components/page-components/Mission";
 const Home = () => {
   return (
   <div className="min-h-screen bg-white">

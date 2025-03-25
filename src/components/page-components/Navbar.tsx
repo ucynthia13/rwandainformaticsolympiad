@@ -6,7 +6,6 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import React, { useState, useEffect, useMemo } from "react"; // make sure useMemo is imported
 
-
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -14,42 +13,41 @@ const Navbar = () => {
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
-  const navItems = useMemo(() => [
-    { name: "Home", id: "hero" },
-    { name: "About", id: "mission" },
-    { name: "Eligibility", id: "features" },
-    { name: "Timeline", id: "roadmap" },
-    { name: "Team", id: "coaches" },
-    { name: "Resources", id: "resources" },
-    { name: "Partners", id: "team" }
-  ], []);
-  
+  const navItems = useMemo(
+    () => [
+      { name: "Home", id: "hero" },
+      { name: "About", id: "mission" },
+      { name: "Eligibility", id: "features" },
+      { name: "Timeline", id: "roadmap" },
+      { name: "Team", id: "coaches" },
+      { name: "Resources", id: "resources" },
+      { name: "Sponsors", id: "sponsors" },
+    ],
+    []
+  );
 
   useEffect(() => {
     const handleScroll = () => {
-      // Handle navbar background change on scroll
       if (window.scrollY > 20) {
         setScrolled(true);
       } else {
         setScrolled(false);
       }
-      
-      // Determine which section is currently in view
-      const sectionIds = navItems.map(item => item.id);
-      let currentSection = sectionIds[0]; // Default to first section
-      
+
+      const sectionIds = navItems.map((item) => item.id);
+      let currentSection = sectionIds[0];
+
       for (const id of sectionIds) {
         const element = document.getElementById(id);
         if (element) {
           const rect = element.getBoundingClientRect();
-          // If section is in viewport (with some buffer for navbar)
           if (rect.top <= 150 && rect.bottom >= 150) {
             currentSection = id;
             break;
           }
         }
       }
-      
+
       setActiveSection(currentSection);
     };
 
@@ -61,10 +59,10 @@ const Navbar = () => {
     setIsOpen(false);
     const element = document.getElementById(id);
     if (element) {
-      setActiveSection(id); // Update active section immediately for better UX
+      setActiveSection(id);
       window.scrollTo({
-        top: element.offsetTop - 100, // Offset for navbar height
-        behavior: "smooth"
+        top: element.offsetTop - 100,
+        behavior: "smooth",
       });
     }
   };
@@ -88,7 +86,6 @@ const Navbar = () => {
                 width={50}
                 height={50}
                 alt="logo"
-                className=""
               />
             </div>
             <span className="hidden sm:inline text-olympiad-navy">RwIO</span>
@@ -97,25 +94,25 @@ const Navbar = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-6">
             {navItems.map((item) => (
-              <button 
+              <button
                 key={item.name}
                 onClick={() => scrollToSection(item.id)}
-                className={`relative text-sm font-medium transition-colors cursor-pointer ${
-                  activeSection === item.id 
-                    ? "text-purple-600" 
-                    : "text-olympiad-navy hover:text-olympiad-blue"
-                }`}
+                className={cn("relative transition-colors cursor-pointer",
+                  activeSection === item.id
+                    ? "text-olympiad-blue"
+                    : "text-olympiad-gray"
+            )}
               >
                 {item.name}
                 {activeSection === item.id && (
-                  <div className="absolute bottom-[-8px] left-0 right-0 h-[3px] bg-purple-600 rounded-full"></div>
+                  <div className="absolute bottom-[-8px] left-0 right-0 h-[3px] bg-olympiad-blue rounded-full"></div>
                 )}
               </button>
             ))}
-            
-            <Link 
-              href="#" 
-              className="ml-2 px-4 py-2 bg-olympiad-blue text-white rounded-md font-medium text-sm shadow-sm hover:bg-olympiad-blue/90 transition-all"
+
+            <Link
+              href="#"
+              className="ml-2 px-4 py-2 bg-olympiad-blue text-white rounded-full font-medium text-sm shadow-sm hover:bg-olympiad-blue/90 transition-all"
             >
               Donate
             </Link>
@@ -145,19 +142,20 @@ const Navbar = () => {
               <button
                 key={item.name}
                 onClick={() => scrollToSection(item.id)}
-                className={`px-2 py-2 transition-colors font-medium text-left rounded-md ${
-                  activeSection === item.id 
-                    ? "text-purple-600 bg-purple-50" 
-                    : "text-olympiad-navy hover:text-olympiad-blue"
-                }`}
+                className={cn(
+                  "px-2 py-2 transition-colors text-left rounded-md",
+                  activeSection === item.id
+                    ? "text-olympiad-blue"
+                    : "text-olympiad-gray"
+                )}
               >
                 {item.name}
               </button>
             ))}
-            
+
             <Link
               href="#"
-              className="mt-4 px-4 py-3 bg-olympiad-blue text-white rounded-md font-medium text-center"
+              className="mt-4 px-4 py-3 bg-olympiad-blue text-white rounded-full text-center "
               onClick={() => setIsOpen(false)}
             >
               Donate

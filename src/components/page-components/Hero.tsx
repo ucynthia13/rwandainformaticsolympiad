@@ -18,37 +18,46 @@ const Hero = () => {
           <div className="md:w-1/2 mb-10 md:mb-0 animate-fade-in">
             <div className="max-w-xl">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-olympiad-navy lg:leading-tight">
-                Rwanda&apos;s 
-                <span className="text-olympiad-blue bg-gradient-to-r from-olympiad-blue to-olympiad-blue/60 bg-clip-text text-transparent"> First </span>
+                Rwanda&apos;s
+                <span className="text-olympiad-blue bg-gradient-to-r from-olympiad-blue to-olympiad-blue/60 bg-clip-text text-transparent">
+                  {" "}
+                  First{" "}
+                </span>
                 Informatics Olympiad
               </h1>
 
               <p className="mt-8 text-lg text-olympiad-gray">
-                Join Rwanda&apos;s first informatics competition for high schoolers,
-                encouraging problem-solving skills and innovation in
+                Join Rwanda&apos;s first informatics competition for high
+                schoolers, encouraging problem-solving skills and innovation in
                 programming, designed for young enthusiasts aged 20 and below.
               </p>
 
               <div className="mt-8 flex flex-wrap gap-4">
                 <Link href="#" className="btn-primary rounded-full">
-                  Support by Donating
+                  Register Your School
                 </Link>
                 <Link href="#" className="btn-outline rounded-full">
-                  Register Your School
+                  Support by Donating
                 </Link>
               </div>
 
-              <div className="mt-10 grid grid-cols-3 gap-4">
+              <div className="mt-10 md:grid grid-cols-3 gap-4 hidden">
                 <div className="flex items-center space-x-2 text-olympiad-gray">
-                  <Brain className="h-6 w-6 text-olympiad-blue" />
+                <div className="rounded-full p-3 bg-olympiad-blue/40">
+                    <Brain className="h-5 w-5 text-olympiad-blue" />
+                  </div>
                   <span>Strategic Thinking</span>
                 </div>
                 <div className="flex items-center space-x-2 text-olympiad-gray">
-                  <Code className="h-6 w-6 text-olympiad-blue" />
+                  <div className="rounded-full p-3 bg-olympiad-blue/40">
+                    <Code className="h-5 w-5 text-olympiad-blue" />
+                  </div>
                   <span>Coding Excellence</span>
                 </div>
                 <div className="flex items-center space-x-2 text-olympiad-gray">
-                  <Trophy className="h-6 w-6 text-olympiad-blue" />
+                <div className="rounded-full p-3 bg-olympiad-blue/40">
+                    <Trophy className="h-5 w-5 text-olympiad-blue" />
+                  </div>
                   <span>Global Recognition</span>
                 </div>
               </div>

@@ -3,37 +3,42 @@ import React from "react";
 import { Check, Clock } from "lucide-react";
 
 const RoadMap = () => {
-  // Updated data structure with status
   const olympiadEvents = [
     {
       year: "Nov 2024",
       title: "School Selection Test",
       status: "completed",
+      description: "Students take a school-supervised selection test from their RwIO."
     },
     {
       year: "Dec 2024",
       title: "Online Camps & Workshops",
       status: "completed",
+      description: "After successful completion of the test, students undergo an educational workshop."
     },
     {
       year: "Feb 2025",
       title: "National Selection Test",
       status: "completed",
+      description: "Students take a second test, this time to determine who will attend the April Camp."
     },
     {
       year: "Apr 2025",
       title: " In-Person Camps & Workshops",
       status: "upcoming",
+      description: "Students undergo a second intense in-person camp with our coaches at AIMS."
     },
     {
       year: "Apr 2025",
       title: "Final Test to Form National Team",
       status: "upcoming",
+      description: "Students take a final test to determine the representatives to represent Rwanda at IOI."
     },
     {
       year: "June 2025",
       title: "International Olympiad in China",
       status: "upcoming",
+      description: "Selected Students will represent Rwanda in IOI 2025 in China."
     },
   ];
 
@@ -81,14 +86,14 @@ const RoadMap = () => {
       </div>
 
       <div className="relative">
-        <div id="timeline-container" className="overflow-x-auto hide-scrollbar">
-          <div className="flex justify-center gap-4 min-w-max px-4">
+        <div id="timeline-container" className="container mx-auto px-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-6 px-4 ">
             {olympiadEvents.map((event, index) => {
               const statusClasses = getStatusClasses(event.status);
               return (
                 <div
                   key={index}
-                  className="relative pt-16 w-[200px] flex-shrink-0"
+                  className="relative pt-16 flex-shrink-0"
                 >
                   <div className="absolute top-0 left-1/2 -translate-x-1/2 py-4">
                     <div className="flex flex-col items-center">
@@ -105,9 +110,8 @@ const RoadMap = () => {
                     </div>
                   </div>
 
-                  {/* Content card below */}
                   <div
-                    className={`${statusClasses.lightBg} ${statusClasses.border} rounded-lg shadow-sm px-6 py-4`}
+                    className={`${statusClasses.lightBg} ${statusClasses.border} rounded-lg shadow-sm px-6 py-4 `}
                   >
                     <div className="mb-2">
                       <div
@@ -120,9 +124,10 @@ const RoadMap = () => {
                           : "Upcoming"}
                       </div>
                     </div>
-                    <h3 className={`font-semibold ${statusClasses.textColor}`}>
+                    <h3 className={`font-semibold text-sm ${statusClasses.textColor}`}>
                       {event.title}
                     </h3>
+                    <p className="text-olympiad-gray text-[14px] py-2">{event.description}</p>
                   </div>
                 </div>
               );

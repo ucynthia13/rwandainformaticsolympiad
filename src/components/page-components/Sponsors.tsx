@@ -24,7 +24,7 @@ export default function Sponsors() {
   ];
 
   return (
-    <section className="py-14 bg-gradient-to-b from-white to-olympiad-blue-50">
+    <section className="py-16 bg-gradient-to-b from-white to-olympiad-blue-50">
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-olympiad-navy mb-4">

@@ -80,7 +80,7 @@ const Eligibility = () => {
           ))}
         </div>
 
-        <div className="pt-24 pb-14">
+        <div className="pt-24">
           <div className="text-center max-w-3xl mx-auto mb-6">
             <h2 className="text-3xl font-bold text-olympiad-navy mb-3">
               Selection Criteria

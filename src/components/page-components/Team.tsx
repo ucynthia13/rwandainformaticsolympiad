@@ -81,7 +81,7 @@ const Team = () => {
       },
     },
     {
-      name: "Niyokwizera Jean D'Amour",
+      name: "Niyokwizera Jean D&apos;Amour",
       role: "Technical Trainer",
       image: "/assets/images/coaches/coach3.jpg",
       socials: {
@@ -110,7 +110,7 @@ const Team = () => {
           </h2>
           <div className="h-1 w-20 bg-olympiad-blue mx-auto mb-6"></div>
           <p className="text-olympiad-gray max-w-sm mx-auto">
-          Meet the team leading Rwanda's international informatics competitions.
+          Meet the team leading Rwanda&apos;s international informatics competitions.
           </p>
         </div>
 

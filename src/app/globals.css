@@ -102,4 +102,11 @@
   .olympiad-transition {
     @apply transition-all duration-300 ease-in-out;
   }
-}
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}  /* This should be the only closing brace */

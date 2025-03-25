@@ -114,11 +114,11 @@ const Resources = () => {
   const getColorClasses = (color: 'blue' | 'emerald' | 'purple' | 'amber') => {
     const colorMap = {
       blue: {
-        light: "bg-blue-50",
-        border: "border-blue-100",
-        text: "text-blue-600",
-        hover: "hover:border-blue-300",
-        iconBg: "bg-blue-100"
+        light: "bg-olympiad-blue/10",
+        border: "border-olympiad-blue",
+        text: "text-olympiad-blue",
+        hover: "hover:border-olympiad-blue-300",
+        iconBg: "bg-olympiad-blue/40"
       },
       emerald: {
         light: "bg-emerald-50",
@@ -147,19 +147,18 @@ const Resources = () => {
   };
 
   return (
-    <section className="py-16 bg-gradient-to-b from-white to-blue-50/20">
+    <section className="py-14">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-10">
           <h2 className="text-3xl md:text-4xl font-bold text-olympiad-navy mb-4">
             Learning Resources
           </h2>
           <div className="h-1 w-20 bg-olympiad-blue mx-auto mb-6"></div>
-          <p className="text-olympiad-gray text-sm">
+          <p className="text-olympiad-gray max-w-sm mx-auto">
             Access a curated collection of materials to help you prepare for the Rwanda Informatics Olympiad.
           </p>
         </div>
 
-        {/* Resource Categories in Columns - adjusted to fit exactly 4 columns */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
           {filteredCategories.map((category, categoryIndex) => {
             const colorClasses = getColorClasses(category.color);

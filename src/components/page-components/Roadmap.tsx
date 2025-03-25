@@ -1,14 +1,14 @@
-"use client"
+"use client";
 import React from "react";
 import { Check, Clock } from "lucide-react";
 
-const Roadmap = () => {
+const RoadMap = () => {
   // Updated data structure with status
   const olympiadEvents = [
     {
       year: "Nov 2024",
       title: "School Selection Test",
-      status: "completed", 
+      status: "completed",
     },
     {
       year: "Dec 2024",
@@ -68,61 +68,59 @@ const Roadmap = () => {
   };
 
   return (
-    <div className="glass-card rounded-lg p-8 mb-8">
-      <div className="text-center max-w-3xl mx-auto mb-12">
+    <div className="relative py-16">
+      <div className="flex flex-col justify-center text-center max-w-3xl mx-auto mb-8">
         <h2 className="text-3xl md:text-4xl font-bold text-olympiad-navy mb-4">
-        Path to IOI 2025
+          Path to IOI 2025
         </h2>
         <div className="h-1 w-20 bg-olympiad-blue mx-auto mb-6"></div>
-        <p className="text-olympiad-gray text-sm">
-        Key milestones in our journey to represent Rwanda at the International Olympiad in Informatics
+        <p className="text-olympiad-gray max-w-sm mx-auto">
+          Key milestones in our journey to represent Rwanda at the International
+          Olympiad in Informatics
         </p>
       </div>
-      
+
       <div className="relative">
-        {/* Timeline container */}
-        <div id="timeline-container" className="overflow-x-auto pb-12 hide-scrollbar">
-          {/* Road/path background */}
-          <div className="absolute top-0 left-4 right-4 h-16 bg-gray-100 rounded-full z-0 flex items-center justify-center">
-            <div className="h-2 w-full mx-8 border-t-2 border-b-2 border-dashed border-gray-300"></div>
-          </div>
-          
-          {/* Timeline items */}
-          <div className="flex gap-4 min-w-max px-4 relative z-10">
+        <div id="timeline-container" className="overflow-x-auto hide-scrollbar">
+          <div className="flex justify-center gap-4 min-w-max px-4">
             {olympiadEvents.map((event, index) => {
               const statusClasses = getStatusClasses(event.status);
-              
               return (
-                <div key={index} className="relative pt-16 w-[200px] flex-shrink-0">
-                  {/* Connect the road with dots */}
-                  {index > 0 && (
-                    <div className="absolute top-8 -left-4 w-4 h-0 border-t-4 border-dashed border-gray-300"></div>
-                  )}
-                  
-                  {/* Milestone marker with date inside the road */}
-                  <div className="absolute top-0 left-1/2 -translate-x-1/2">
+                <div
+                  key={index}
+                  className="relative pt-16 w-[200px] flex-shrink-0"
+                >
+                  <div className="absolute top-0 left-1/2 -translate-x-1/2 py-4">
                     <div className="flex flex-col items-center">
-                      {/* Date inside the road */}
-                      <div className={`text-xs font-medium ${statusClasses.textColor} mb-1`}>
+                      <div
+                        className={`text-xs font-medium ${statusClasses.textColor} mb-1`}
+                      >
                         {event.year}
                       </div>
-                      
-                      {/* Milestone circle */}
-                      <div className={`${statusClasses.bg} rounded-full w-12 h-12 flex items-center justify-center shadow-sm border-2 border-white`}>
+                      <div
+                        className={`${statusClasses.bg} rounded-full w-10 h-10 flex items-center justify-center shadow-sm border-2 border-white`}
+                      >
                         {statusClasses.icon}
                       </div>
                     </div>
                   </div>
-                  
+
                   {/* Content card below */}
-                  <div className={`${statusClasses.lightBg} ${statusClasses.border} rounded-lg shadow-sm p-4`}>
+                  <div
+                    className={`${statusClasses.lightBg} ${statusClasses.border} rounded-lg shadow-sm px-6 py-4`}
+                  >
                     <div className="mb-2">
-                      <div className={`inline-block px-2 py-1 rounded-full text-xs font-semibold ${statusClasses.bg} text-white`}>
-                        {event.status === "completed" ? "Completed" : 
-                         event.status === "in-progress" ? "In Progress" : "Upcoming"}
+                      <div
+                        className={`inline-block px-2 py-1 rounded-full text-[11px] font-semibold ${statusClasses.bg} text-white`}
+                      >
+                        {event.status === "completed"
+                          ? "Completed"
+                          : event.status === "in-progress"
+                          ? "In Progress"
+                          : "Upcoming"}
                       </div>
                     </div>
-                    <h3 className={`font-semibold text-lg ${statusClasses.textColor}`}>
+                    <h3 className={`font-semibold ${statusClasses.textColor}`}>
                       {event.title}
                     </h3>
                   </div>
@@ -136,4 +134,4 @@ const Roadmap = () => {
   );
 };
 
-export default Roadmap;
+export default RoadMap;

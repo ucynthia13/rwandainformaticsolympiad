@@ -1,6 +1,6 @@
 "use client"
 import React from "react";
-import { ChevronLeft, ChevronRight, Check, Clock } from "lucide-react";
+import { Check, Clock } from "lucide-react";
 
 const Roadmap = () => {
   // Updated data structure with status
@@ -36,18 +36,6 @@ const Roadmap = () => {
       status: "upcoming",
     },
   ];
-
-  const scrollTimeline = (direction: 'left' | 'right') => {
-    const timeline = document.getElementById('timeline-container');
-    const scrollAmount = 300;
-    if (timeline) {
-      if (direction === 'left') {
-        timeline.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
-      } else {
-        timeline.scrollBy({ left: scrollAmount, behavior: 'smooth' });
-      }
-    }
-  };
 
   const getStatusClasses = (status: string) => {
     switch (status) {

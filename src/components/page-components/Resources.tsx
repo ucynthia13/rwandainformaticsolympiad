@@ -2,10 +2,10 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { Book, Code, FileText, Award, ChevronRight, Search } from 'lucide-react';
+import { Book, Code, FileText, Award, ChevronRight } from 'lucide-react';
 
 const Resources = () => {
-  const [searchTerm, setSearchTerm] = useState('');
+  const [searchTerm] = useState('');
   
   type ResourceColor = 'blue' | 'emerald' | 'purple' | 'amber';
 

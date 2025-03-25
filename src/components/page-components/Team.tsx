@@ -111,7 +111,7 @@ const Team = () => {
           </h2>
           <div className="h-1 w-20 bg-olympiad-blue mx-auto mb-6"></div>
           <p className="text-olympiad-gray text-sm">
-            Meet the dedicated individuals driving Rwanda's participation in international informatics competitions.
+            Meet the dedicated individuals driving Rwanda&#39;s participation in international informatics competitions.
           </p>
         </div>
 

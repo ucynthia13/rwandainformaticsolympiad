@@ -1,10 +1,11 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
+import React, { useState, useEffect, useMemo } from "react"; // make sure useMemo is imported
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,8 +14,7 @@ const Navbar = () => {
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
-  // Navigation items array for section scrolling
-  const navItems = [
+  const navItems = useMemo(() => [
     { name: "Home", id: "hero" },
     { name: "About", id: "mission" },
     { name: "Eligibility", id: "features" },
@@ -22,7 +22,8 @@ const Navbar = () => {
     { name: "Team", id: "coaches" },
     { name: "Resources", id: "resources" },
     { name: "Partners", id: "team" }
-  ];
+  ], []);
+  
 
   useEffect(() => {
     const handleScroll = () => {

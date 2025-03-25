@@ -1,17 +1,12 @@
 "use client";
 
 import React from "react";
-import Link from "next/link";
 import Image from "next/image";
 import {
   Mail,
-  MapPin,
   Phone,
-  Twitter,
-  Facebook,
   Instagram,
   Linkedin,
-  ExternalLink,
 } from "lucide-react";
 
 const Footer = () => {

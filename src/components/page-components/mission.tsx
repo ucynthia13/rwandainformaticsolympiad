@@ -88,7 +88,7 @@ export default function Mission() {
         <div className="max-w-3xl mx-auto text-center mb-12">
           <h2 className="text-sm uppercase tracking-wider text-olympiad-blue font-semibold mb-3">Who We Are</h2>
           <h1 className="text-3xl md:text-4xl font-bold text-olympiad-navy mb-6">
-            Building Rwanda's Future in Informatics
+            Building Rwanda&#39;s Future in Informatics
           </h1>
           <div className="h-1 w-24 bg-olympiad-blue mx-auto mb-6"></div>
           <p className="text-olympiad-gray text-lg">

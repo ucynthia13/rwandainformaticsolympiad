@@ -17,9 +17,9 @@ const Navbar = () => {
     () => [
       { name: "Home", id: "hero" },
       { name: "About", id: "mission" },
-      { name: "Eligibility", id: "features" },
-      { name: "Timeline", id: "roadmap" },
-      { name: "Team", id: "coaches" },
+      { name: "Eligibility", id: "eligibility" },
+      { name: "Roadmap", id: "timeline" },
+      { name: "Team", id: "team" },
       { name: "Resources", id: "resources" },
       { name: "Sponsors", id: "sponsors" },
     ],

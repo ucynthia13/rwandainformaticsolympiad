@@ -10,18 +10,18 @@ import RoadMap from "@/components/page-components/RoadMap";
 import Mission from "@/components/page-components/Mission";
 const Home = () => {
   return (
-  <div className="min-h-screen bg-white">
-    <Navbar />
-    <div id="hero"><Hero /></div>
-    <div id="mission"><Mission/></div>
-    <div id="features"><Features /></div>
-    <div id="roadmap"><RoadMap /></div>
-    <div id="coaches"><Coaches /></div>
-    <div id="resources"><Resources /></div>
-    <div id="team"><Team /></div>
-    <Footer />
-  </div>
+    <div className="min-h-screen bg-white">
+      <Navbar />
+      <Hero />
+      <Mission />
+      <Features />
+      <RoadMap />
+      <Coaches />
+      <Resources />
+      <Team />
+      <Footer />
+    </div>
   );
-}
+};
 
-export default Home
+export default Home;

@@ -100,7 +100,6 @@ const Resources = () => {
     }
   ];
 
-  // Filter resources based on search term
   const filteredCategories = resourceCategories.map(category => {
     return {
       ...category,
@@ -147,7 +146,7 @@ const Resources = () => {
   };
 
   return (
-    <section className="py-16">
+    <section className="py-16" id="resources">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-10">
           <h2 className="text-3xl md:text-4xl font-bold text-olympiad-navy mb-4">
@@ -165,7 +164,6 @@ const Resources = () => {
             
             return (
               <div key={categoryIndex} className="flex flex-col h-full">
-                {/* Category Header */}
                 <div className={`flex items-center gap-3 p-4 rounded-t-lg ${colorClasses.light} ${colorClasses.border} border-b-0`}>
                   <div className={`p-2 rounded-full ${colorClasses.iconBg} flex-shrink-0`}>
                     {category.icon}
@@ -175,7 +173,6 @@ const Resources = () => {
                   </h3>
                 </div>
                 
-                {/* Category Resources */}
                 <div className={`flex-1 rounded-b-lg ${colorClasses.light} ${colorClasses.border} border-t-0 p-4`}>
                   <div className="space-y-3">
                     {category.resources.map((resource, resourceIndex) => (

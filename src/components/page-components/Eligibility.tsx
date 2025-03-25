@@ -48,7 +48,7 @@ const Eligibility = () => {
   ];
 
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-white" id="eligibility">
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-6">
           <h2 className="text-3xl font-bold text-olympiad-navy mb-3">

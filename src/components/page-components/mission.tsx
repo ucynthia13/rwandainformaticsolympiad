@@ -66,7 +66,7 @@ const Mission = () => {
   };
 
   return (
-    <section className="py-16 relative overflow-hidden">
+    <section className="py-16 relative overflow-hidden" id="about">
       <div className="absolute -top-24 -left-24 w-64 h-64 bg-blue-50 rounded-full opacity-70 blur-3xl"></div>
       <div className="absolute -bottom-32 -right-32 w-80 h-80 bg-purple-50 rounded-full opacity-70 blur-3xl"></div>
       

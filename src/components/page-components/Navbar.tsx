@@ -9,25 +9,64 @@ import Image from "next/image";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [activeSection, setActiveSection] = useState("hero");
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
+  // Navigation items array for section scrolling
+  const navItems = [
+    { name: "Home", id: "hero" },
+    { name: "About", id: "mission" },
+    { name: "Eligibility", id: "features" },
+    { name: "Timeline", id: "roadmap" },
+    { name: "Team", id: "coaches" },
+    { name: "Resources", id: "resources" },
+    { name: "Partners", id: "team" }
+  ];
+
   useEffect(() => {
     const handleScroll = () => {
+      // Handle navbar background change on scroll
       if (window.scrollY > 20) {
         setScrolled(true);
       } else {
         setScrolled(false);
       }
+      
+      // Determine which section is currently in view
+      const sectionIds = navItems.map(item => item.id);
+      let currentSection = sectionIds[0]; // Default to first section
+      
+      for (const id of sectionIds) {
+        const element = document.getElementById(id);
+        if (element) {
+          const rect = element.getBoundingClientRect();
+          // If section is in viewport (with some buffer for navbar)
+          if (rect.top <= 150 && rect.bottom >= 150) {
+            currentSection = id;
+            break;
+          }
+        }
+      }
+      
+      setActiveSection(currentSection);
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [navItems]);
 
-  useEffect(() => {
+  const scrollToSection = (id: string) => {
     setIsOpen(false);
-  }, []);
+    const element = document.getElementById(id);
+    if (element) {
+      setActiveSection(id); // Update active section immediately for better UX
+      window.scrollTo({
+        top: element.offsetTop - 100, // Offset for navbar height
+        behavior: "smooth"
+      });
+    }
+  };
 
   return (
     <nav
@@ -38,8 +77,8 @@ const Navbar = () => {
     >
       <div className="container mx-auto">
         <div className="flex items-center justify-between">
-          <Link
-            href="/"
+          <button
+            onClick={() => scrollToSection("hero")}
             className="flex items-center space-x-2 font-semibold text-xl"
           >
             <div className="rounded-full overflow-clip">
@@ -51,18 +90,33 @@ const Navbar = () => {
                 className=""
               />
             </div>
-          </Link>
+            <span className="hidden sm:inline text-olympiad-navy">RwIO</span>
+          </button>
 
-          {/* Desktop */}
-          <div className="hidden md:flex items-center space-x-8">
-            <Link href="/" className="nav-link">
-              Home
-            </Link>
-            <Link href="/about" className="nav-link">
-              About
-            </Link>
-            <Link href="/resources" className="nav-link">
-              Resources
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex items-center space-x-6">
+            {navItems.map((item) => (
+              <button 
+                key={item.name}
+                onClick={() => scrollToSection(item.id)}
+                className={`relative text-sm font-medium transition-colors cursor-pointer ${
+                  activeSection === item.id 
+                    ? "text-purple-600" 
+                    : "text-olympiad-navy hover:text-olympiad-blue"
+                }`}
+              >
+                {item.name}
+                {activeSection === item.id && (
+                  <div className="absolute bottom-[-8px] left-0 right-0 h-[3px] bg-purple-600 rounded-full"></div>
+                )}
+              </button>
+            ))}
+            
+            <Link 
+              href="#" 
+              className="ml-2 px-4 py-2 bg-olympiad-blue text-white rounded-md font-medium text-sm shadow-sm hover:bg-olympiad-blue/90 transition-all"
+            >
+              Donate
             </Link>
           </div>
 
@@ -81,28 +135,31 @@ const Navbar = () => {
           className={cn(
             "md:hidden absolute left-0 right-0 px-6 py-4 bg-white/95 backdrop-blur shadow-lg transition-all duration-300 ease-in-out overflow-hidden",
             isOpen
-              ? "max-h-96 opacity-100 top-full"
+              ? "max-h-screen opacity-100 top-full"
               : "max-h-0 opacity-0 top-[110%]"
           )}
         >
-          <div className="flex flex-col space-y-4 pt-2 pb-6">
+          <div className="flex flex-col space-y-3 pt-2 pb-6">
+            {navItems.map((item) => (
+              <button
+                key={item.name}
+                onClick={() => scrollToSection(item.id)}
+                className={`px-2 py-2 transition-colors font-medium text-left rounded-md ${
+                  activeSection === item.id 
+                    ? "text-purple-600 bg-purple-50" 
+                    : "text-olympiad-navy hover:text-olympiad-blue"
+                }`}
+              >
+                {item.name}
+              </button>
+            ))}
+            
             <Link
-              href="/"
-              className="px-2 py-2 hover:text-olympiad-blue transition-colors"
+              href="#"
+              className="mt-4 px-4 py-3 bg-olympiad-blue text-white rounded-md font-medium text-center"
+              onClick={() => setIsOpen(false)}
             >
-              Home
-            </Link>
-            <Link
-              href="/about"
-              className="px-2 py-2 hover:text-olympiad-blue transition-colors"
-            >
-              About
-            </Link>
-            <Link
-              href="/resources"
-              className="px-2 py-2 hover:text-olympiad-blue transition-colors"
-            >
-              Resources
+              Donate
             </Link>
           </div>
         </div>

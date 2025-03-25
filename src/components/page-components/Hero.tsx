@@ -30,11 +30,11 @@ const Hero = () => {
               </p>
 
               <div className="mt-8 flex flex-wrap gap-4">
-                <Link href="/register" className="btn-primary rounded-full">
-                  School Registration
+                <Link href="#" className="btn-primary rounded-full">
+                  Support by Donating
                 </Link>
-                <Link href="/resources" className="btn-outline rounded-full">
-                  Explore Problems
+                <Link href="#" className="btn-outline rounded-full">
+                  Register Your School
                 </Link>
               </div>
 

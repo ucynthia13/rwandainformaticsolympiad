@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -13,6 +15,18 @@ import {
 } from "lucide-react";
 
 const Footer = () => {
+  // Function to scroll to a specific section
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      // Close mobile menu if open
+      window.scrollTo({
+        top: element.offsetTop - 100, // Offset for navbar height
+        behavior: "smooth"
+      });
+    }
+  };
+
   return (
     <footer className="bg-olympiad-navy pt-16 pb-8 text-white">
       <div className="container mx-auto px-6">
@@ -36,20 +50,6 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a
-                href="https://twitter.com"
-                className="bg-white/10 hover:bg-white/20 p-2 rounded-full transition-colors"
-                aria-label="Twitter"
-              >
-                <Twitter size={18} />
-              </a>
-              <a
-                href="https://facebook.com"
-                className="bg-white/10 hover:bg-white/20 p-2 rounded-full transition-colors"
-                aria-label="Facebook"
-              >
-                <Facebook size={18} />
-              </a>
-              <a
                 href="https://instagram.com"
                 className="bg-white/10 hover:bg-white/20 p-2 rounded-full transition-colors"
                 aria-label="Instagram"
@@ -70,36 +70,36 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-6">Quick Links</h3>
             <ul className="space-y-3">
               <li>
-                <Link
-                  href="/"
+                <button
+                  onClick={() => scrollToSection("hero")}
                   className="text-gray-300 hover:text-white transition-colors"
                 >
                   Home
-                </Link>
+                </button>
               </li>
               <li>
-                <Link
-                  href="/about"
+                <button
+                  onClick={() => scrollToSection("mission")}
                   className="text-gray-300 hover:text-white transition-colors"
                 >
                   About Us
-                </Link>
+                </button>
               </li>
               <li>
-                <Link
-                  href="/resources"
+                <button
+                  onClick={() => scrollToSection("roadmap")}
                   className="text-gray-300 hover:text-white transition-colors"
                 >
-                  Problem Archive
-                </Link>
+                  Events
+                </button>
               </li>
               <li>
-                <Link
-                  href="/team"
+                <button
+                  onClick={() => scrollToSection("coaches")}
                   className="text-gray-300 hover:text-white transition-colors"
                 >
-                  Competitors
-                </Link>
+                  Team
+                </button>
               </li>
             </ul>
           </div>
@@ -108,37 +108,27 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-6">Other Resources</h3>
             <ul className="space-y-3">
               <li>
-                <a
-                  href="#"
-                  className="text-gray-300 hover:text-white transition-colors flex items-center"
-                >
-                  Rules & Guidelines
-                  <ExternalLink className="ml-1 h-3 w-3" />
-                </a>
-              </li>
-              <li>
-                <Link
-                  href="/faq"
+                <button
+                  onClick={() => scrollToSection("faq")}
                   className="text-gray-300 hover:text-white transition-colors"
                 >
                   FAQ
-                </Link>
+                </button>
               </li>
               <li>
-                <Link
-                  href="/sponsors"
+                <button
+                  onClick={() => scrollToSection("team")}
                   className="text-gray-300 hover:text-white transition-colors"
                 >
                   Our Sponsors
-                </Link>
+                </button>
               </li>
               <li>
-                <Link
-                  href="/news"
+                <button
                   className="text-gray-300 hover:text-white transition-colors"
                 >
                   News
-                </Link>
+                </button>
               </li>
             </ul>
           </div>
@@ -146,14 +136,6 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-6">Contact Us</h3>
             <ul className="space-y-4">
-              <li className="flex items-start">
-                <MapPin className="h-5 w-5 text-olympiad-blue mr-3 mt-0.5" />
-                <span className="text-gray-300">
-                  Rwanda Informatics Olympiad
-                  <br />
-                  Kgali, Rwanda
-                </span>
-              </li>
               <li className="flex items-center">
                 <Mail className="h-5 w-5 text-olympiad-blue mr-3" />
                 <a

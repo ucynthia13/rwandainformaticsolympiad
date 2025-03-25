@@ -74,7 +74,7 @@ const RoadMap = () => {
 
   return (
     <div className="relative py-16" id="timeline">
-      <div className="flex flex-col justify-center text-center max-w-3xl mx-auto mb-8">
+      <div className="flex flex-col justify-center text-center max-w-3xl mx-auto mb-8 px-6">
         <h2 className="text-3xl md:text-4xl font-bold text-olympiad-navy mb-4">
           Path to IOI 2025
         </h2>

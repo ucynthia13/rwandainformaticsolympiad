@@ -9,6 +9,10 @@ export default function Sponsors() {
       logo: "/assets/images/gtf.jpg",
     },
     {
+      name: "Ministry of ICT & Innovation",
+      logo: "/assets/images/minict.png",
+    },
+    {
       name: "AIMS Rwanda",
       logo: "/assets/images/aims.jpeg",
     },
@@ -17,9 +21,10 @@ export default function Sponsors() {
       name: "Hence Technologies",
       logo: "/assets/images/hence.png",
     },
+    
     {
-      name: "Rwanda Coding Academy",
-      logo: "/assets/images/rca.png",
+      name: "Ministry of Education",
+      logo: "/assets/images/minict.png",
     },
   ];
 

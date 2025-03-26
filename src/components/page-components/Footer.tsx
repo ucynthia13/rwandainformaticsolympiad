@@ -119,11 +119,13 @@ const Footer = () => {
                 </button>
               </li>
               <li>
-                <button
-                  className="text-gray-300 hover:text-white transition-colors"
-                >
-                  News
-                </button>
+                <a href="https://www.linkedin.com/company/rwanda-informatics-olympiad/posts/?feedView=all">
+                  <button
+                    className="text-gray-300 hover:text-white transition-colors"
+                  >
+                    News
+                  </button>
+                </a>
               </li>
             </ul>
           </div>

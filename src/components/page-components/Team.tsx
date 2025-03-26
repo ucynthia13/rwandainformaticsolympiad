@@ -12,27 +12,27 @@ const Team = () => {
       role: "Rwanda Informatics Olympiad Manager",
       image: "/assets/images/obed.jpeg",
       socials: {
-        linkedin: "https://linkedin.com/in/nsanzimfuraobed",
-        email: "obed.n@olympiad.rw",
+        linkedin: "https://www.linkedin.com/in/obed-nsanzimfura/",
+        email: "senga.obed@gmail.com",
       },
     },
     {
       name: "Hirwa Arnold",
-      role: "Head Coach",
-      image: "/assets/images/coaches/coach1.jpg",
+      role: "Algorithms Specialist",
+      image: "/assets/images/arnold.jpeg",
       socials: {
-        linkedin: "https://linkedin.com/in/hirwaarnold",
-        email: "arnold.h@olympiad.rw",
+        linkedin: "https://www.linkedin.com/in/hirwa-arnold-7464bb229/",
+        email: "arnold.hirw@gmail.com",
       },
     },
 
     {
       name: "Kagaba Etienne",
-      role: "Technical Coach",
+      role: "Data Structures Specialist",
       image: "/assets/images/kagaba.jpeg",
       socials: {
         linkedin: "https://linkedin.com/in/kagabaetienne",
-        email: "etienne.k@olympiad.rw",
+        email: "kagabaetienne04@gmail.com",
       },
     },
     {
@@ -46,57 +46,57 @@ const Team = () => {
     },
     {
       name: "Niyogisubizo Jehovanis",
-      role: "Algorithms Specialist",
-      image: "/assets/images/coaches/coach5.jpg",
+      role: "Algorithmic Complexity Specialist",
+      image: "/assets/images/jehovanis.jpeg",
       socials: {
-        linkedin: "https://linkedin.com/in/niyogisubizojehovanis",
-        email: "jehovanis.n@olympiad.rw",
+        linkedin: "https://www.linkedin.com/in/johovanis/",
+        email: "gisubizo.jovan@gmail.com",
       },
     },
     {
       name: "Hakim Nshyimiyimana",
-      role: "Data Structures Coach",
-      image: "/assets/images/coaches/coach6.jpg",
+      role: "Advanced Data Structures Specialist",
+      image: "/assets/images/avatar.jpeg",
       socials: {
-        linkedin: "https://linkedin.com/in/hakimnshyimiyimana",
-        email: "hakim.n@olympiad.rw",
+        linkedin: "https://www.linkedin.com/in/hakim-nshimiyimana-b767412ba/",
+        email: "nshimiyimanahakim7@gmail.com",
       },
     },
     {
       name: "Ishimwe Frank",
-      role: "Programming Instructor",
-      image: "/assets/images/coaches/coach1.jpg",
+      role: "Dynamic Programming Specialist",
+      image: "/assets/images/frank.jpeg",
       socials: {
-        linkedin: "https://linkedin.com/in/ishimwefrank",
-        email: "frank.i@olympiad.rw",
+        linkedin: "https://www.linkedin.com/in/frank-ishimwe-2634ba284/",
+        email: "ishimwefrank147@gmail.com",
       },
     },
     {
       name: "Sezikeye Jado Fils",
-      role: "Junior Coach",
-      image: "/assets/images/coaches/coach2.jpg",
+      role: "Graph Algorithms Specialist",
+      image: "/assets/images/jado.jpeg",
       socials: {
-        linkedin: "https://linkedin.com/in/sezikeye",
-        email: "jado.s@olympiad.rw",
+        linkedin: "#",
+        email: "jasezikeye50@gmail.com",
       },
     },
     {
-      name: "Niyokwizera Jean D&apos;Amour",
-      role: "Technical Trainer",
-      image: "/assets/images/coaches/coach3.jpg",
+      name: "Niyokwizera Jean D'Amour",
+      role: "Computational Geometry Specialist",
+      image: "/assets/images/avatar.jpeg",
       socials: {
-        linkedin: "https://linkedin.com/in/niyokwizerajean",
-        email: "jean.n@olympiad.rw",
+        linkedin: "#",
+        email: "niyokwizerajd123@gmail.com",
       },
     },
 
     {
       name: "Cynthia Umwali",
-      role: "Student Mentor",
+      role: "Problem Design Specialist",
       image: "/assets/images/cynthia.png",
       socials: {
         linkedin: "https://linkedin.com/in/cynthiaumwalii",
-        email: "cynthia.u@olympiad.rw",
+        email: "cynthiaaa877@gmail.com",
       },
     },
   ];

@@ -74,7 +74,7 @@ const Mission = () => {
         <div className="max-w-3xl mx-auto text-center mb-12">
           <h2 className="text-sm uppercase tracking-wider text-olympiad-blue font-semibold mb-3">Who We Are</h2>
           <h1 className="text-3xl md:text-4xl font-bold text-olympiad-navy mb-6">
-            Building Rwanda&#39;s Future in Informatics
+            Rwanda&#39;s Future in Informatics
           </h1>
           <div className="h-1 w-24 bg-olympiad-blue mx-auto mb-6"></div>
           <p className="text-olympiad-gray text-lg">
@@ -93,12 +93,12 @@ const Mission = () => {
                 className={`rounded-xl overflow-hidden shadow-sm transition-all duration-300 hover:shadow-lg h-full flex flex-col`}
               >
                 <div className={`h-2 ${colorClasses.bg}`}></div>
-                <div className={`p-4 sm:p-5 bg-gradient-to-br ${colorClasses.lightBg} flex-1 flex flex-col`}>
+                <div className={`p-4 sm:p-6 bg-gradient-to-br ${colorClasses.lightBg} flex-1 flex flex-col`}>
                   <div className="flex items-center mb-3">
                     <div className={`p-4 rounded-full ${colorClasses.iconBg} mr-3`}>
                       {card.icon}
                     </div>
-                    <h3 className={`text-xl font-bold ${colorClasses.text}`}>
+                    <h3 className={`text-[22px] font-bold ${colorClasses.text}`}>
                       {card.title}
                     </h3>
                   </div>
@@ -111,7 +111,7 @@ const Mission = () => {
                     {card.highlights.map((highlight, i) => (
                       <span 
                         key={i}
-                        className={`text-xs font-medium px-2 py-0.5 rounded-full bg-white/60 ${colorClasses.text} border ${colorClasses.border}`}
+                        className={`text-[13px] font-medium px-2 py-0.5 rounded-full bg-white/60 ${colorClasses.text} border ${colorClasses.border}`}
                       >
                         {highlight}
                       </span>

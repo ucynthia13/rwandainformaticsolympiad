@@ -112,7 +112,7 @@ const Navbar = () => {
 
             <Link
               href="#"
-              className="ml-2 px-4 py-2 bg-olympiad-blue text-white rounded-full font-medium text-sm shadow-sm hover:bg-olympiad-blue/90 transition-all"
+              className="ml-2 px-4 py-2 bg-olympiad-blue text-white rounded-full shadow-sm hover:bg-olympiad-blue/90 transition-all"
             >
               Donate
             </Link>
@@ -155,7 +155,8 @@ const Navbar = () => {
 
             <Link
               href="#"
-              className="mt-4 px-4 py-3 bg-olympiad-blue text-white rounded-full text-center "
+              className="mt-4 px-6
+               py-3 bg-olympiad-blue text-white rounded-full text-center "
               onClick={() => setIsOpen(false)}
             >
               Donate

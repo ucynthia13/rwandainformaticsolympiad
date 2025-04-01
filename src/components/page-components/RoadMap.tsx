@@ -36,9 +36,9 @@ const RoadMap = () => {
     },
     {
       year: "June 2025",
-      title: "International Olympiad in China",
+      title: "International Olympiad in Bolivia",
       status: "upcoming",
-      description: "Selected Students will represent Rwanda in IOI 2025 in China."
+      description: "Selected Students will represent Rwanda in IOI 2025 in Bolivia."
     },
   ];
 
@@ -75,11 +75,11 @@ const RoadMap = () => {
   return (
     <div className="relative py-16" id="timeline">
       <div className="flex flex-col justify-center text-center max-w-3xl mx-auto mb-8 px-6">
-        <h2 className="text-3xl md:text-4xl font-bold text-olympiad-navy mb-4">
+        <h2 className="text-3xl md:text-4xl font-bold text-olympiad-navy mb-6">
           Path to IOI 2025
         </h2>
         <div className="h-1 w-20 bg-olympiad-blue mx-auto mb-6"></div>
-        <p className="text-olympiad-gray max-w-sm mx-auto">
+        <p className="text-olympiad-gray max-w-md mx-auto text-lg">
           Key milestones in our journey to represent Rwanda at the International
           Olympiad in Informatics
         </p>
@@ -127,7 +127,7 @@ const RoadMap = () => {
                     <h3 className={`font-semibold text-sm ${statusClasses.textColor}`}>
                       {event.title}
                     </h3>
-                    <p className="text-olympiad-gray text-[14px] py-2">{event.description}</p>
+                    <p className="text-olympiad-gray text-[15px] py-2">{event.description}</p>
                   </div>
                 </div>
               );

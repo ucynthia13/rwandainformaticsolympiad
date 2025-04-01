@@ -149,11 +149,11 @@ const Resources = () => {
     <section className="py-16" id="resources">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-10">
-          <h2 className="text-3xl md:text-4xl font-bold text-olympiad-navy mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-olympiad-navy mb-6">
             Learning Resources
           </h2>
           <div className="h-1 w-20 bg-olympiad-blue mx-auto mb-6"></div>
-          <p className="text-olympiad-gray max-w-sm mx-auto">
+          <p className="text-olympiad-gray max-w-md text-lg mx-auto">
             Access a curated collection of materials to help you prepare for the Rwanda Informatics Olympiad.
           </p>
         </div>
@@ -163,7 +163,7 @@ const Resources = () => {
             const colorClasses = getColorClasses(category.color);
             
             return (
-              <div key={categoryIndex} className="flex flex-col h-full">
+              <div key={categoryIndex} className="flex flex-col h-full rounded-xl">
                 <div className={`flex items-center gap-3 p-4 rounded-t-lg ${colorClasses.light} ${colorClasses.border} border-b-0`}>
                   <div className={`p-2 rounded-full ${colorClasses.iconBg} flex-shrink-0`}>
                     {category.icon}

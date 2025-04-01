@@ -32,11 +32,11 @@ export default function Sponsors() {
     <section className="py-16 bg-gradient-to-b from-white to-olympiad-blue-50" id="sponsors">
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-olympiad-navy mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-olympiad-navy mb-6">
             Champions of Young Talent
           </h2>
           <div className="h-1 w-20 bg-olympiad-blue mx-auto mb-6"></div>
-          <p className="text-olympiad-gray">
+          <p className="text-olympiad-gray text-lg">
             Rwanda Informatics Olympiad is proudly supported by leading
             technology companies and educational institutions committed to
             nurturing young talent. These organizations make the Rwanda
@@ -58,7 +58,7 @@ export default function Sponsors() {
                   fill
                 />
               </div>
-              <div className="text-olympiad-navy text-sm text-center">
+              <div className="text-olympiad-gray text-center">
                 {sponsor.name}
               </div>
             </div>

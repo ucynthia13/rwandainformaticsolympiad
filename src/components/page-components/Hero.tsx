@@ -17,13 +17,13 @@ const Hero = () => {
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 mb-10 md:mb-0 animate-fade-in">
             <div className="max-w-xl">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-olympiad-navy lg:leading-tight">
-                Rwanda&apos;s
-                <span className="text-olympiad-blue bg-gradient-to-r from-olympiad-blue to-olympiad-blue/60 bg-clip-text text-transparent">
+              <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-olympiad-navy lg:leading-tight">
+                Rwanda
+                <span className="text-olympiad-blue bg-gradient-to-r from-olympiad-blue to-olympiad-blue/60 bg-clip-text text-transparent block">
                   {" "}
-                  First{" "}
+                  Informatics
                 </span>
-                Informatics Olympiad
+                Olympiad
               </h1>
 
               <p className="mt-8 text-lg text-olympiad-gray">
@@ -44,19 +44,19 @@ const Hero = () => {
               <div className="mt-10 md:grid grid-cols-3 gap-4 hidden">
                 <div className="flex items-center space-x-2 text-olympiad-gray">
                 <div className="rounded-full p-3 bg-olympiad-blue/40">
-                    <Brain className="h-5 w-5 text-olympiad-blue" />
+                    <Brain className="h-6 w-6 text-olympiad-blue" />
                   </div>
                   <span>Strategic Thinking</span>
                 </div>
                 <div className="flex items-center space-x-2 text-olympiad-gray">
                   <div className="rounded-full p-3 bg-olympiad-blue/40">
-                    <Code className="h-5 w-5 text-olympiad-blue" />
+                    <Code className="h-6 w-6 text-olympiad-blue" />
                   </div>
                   <span>Coding Excellence</span>
                 </div>
                 <div className="flex items-center space-x-2 text-olympiad-gray">
                 <div className="rounded-full p-3 bg-olympiad-blue/40">
-                    <Trophy className="h-5 w-5 text-olympiad-blue" />
+                    <Trophy className="h-6 w-6 text-olympiad-blue" />
                   </div>
                   <span>Global Recognition</span>
                 </div>

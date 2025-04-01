@@ -105,11 +105,11 @@ const Team = () => {
     <section className="py-16" id="team">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-10">
-          <h2 className="text-3xl md:text-4xl font-bold text-olympiad-navy mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-olympiad-navy mb-6">
             Our Team
           </h2>
           <div className="h-1 w-20 bg-olympiad-blue mx-auto mb-6"></div>
-          <p className="text-olympiad-gray max-w-sm mx-auto">
+          <p className="text-olympiad-gray max-w-md mx-auto text-lg">
           Meet the team leading Rwanda&apos;s international informatics competitions.
           </p>
         </div>

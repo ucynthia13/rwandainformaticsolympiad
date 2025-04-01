@@ -42,7 +42,7 @@ const Eligibility = () => {
     },
     {
       title: "Rwandan Schools Only",
-      description: "Students in Rwanda",
+      description: "Students studying in Rwanda",
       icon: <Map className="h-6 w-6 text-white" />,
     },
   ];
@@ -51,11 +51,11 @@ const Eligibility = () => {
     <section className="py-16 bg-white" id="eligibility">
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-6">
-          <h2 className="text-3xl font-bold text-olympiad-navy mb-3">
+          <h2 className="text-3xl md:text-4xl font-bold text-olympiad-navy mb-6">
             Eligibility
           </h2>
-          <div className="h-1 w-20 bg-olympiad-blue mx-auto mb-4"></div>
-          <p className="text-olympiad-gray max-w-sm mx-auto">
+          <div className="h-1 w-20 bg-olympiad-blue mx-auto mb-6"></div>
+          <p className="text-olympiad-gray max-w-md mx-auto text-lg">
             Discover the selection process in detail and learn about the
             criterias to see who can take part.
           </p>
@@ -73,21 +73,21 @@ const Eligibility = () => {
               <h4 className="font-semibold text-olympiad-navy text-base mb-1">
                 {criteria.title}
               </h4>
-              <p className="text-olympiad-gray text-sm">
+              <p className="text-olympiad-gray">
                 {criteria.description}
               </p>
             </div>
           ))}
         </div>
 
-        <div className="pt-24">
+        <div className="pt-28">
           <div className="text-center max-w-3xl mx-auto mb-6">
-            <h2 className="text-3xl font-bold text-olympiad-navy mb-3">
+            <h2 className="text-3xl md:text-4xl font-bold text-olympiad-navy mb-6">
               Selection Criteria
             </h2>
-            <div className="h-1 w-20 bg-olympiad-blue mx-auto mb-4"></div>
-            <p className="text-olympiad-gray max-w-sm mx-auto">
-              Find out the stages we go through to select our best representatives.
+            <div className="h-1 w-20 bg-olympiad-blue mx-auto mb-6"></div>
+            <p className="text-olympiad-gray max-w-md mx-auto text-lg">
+              Find out the stages we go through to select the best Rwanda's representatives.
             </p>
           </div>
 

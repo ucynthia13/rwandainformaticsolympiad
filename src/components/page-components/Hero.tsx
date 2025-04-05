@@ -36,7 +36,7 @@ const Hero = () => {
                 <Link href="#" className="btn-primary rounded-full">
                   Register Your School
                 </Link>
-                <Link href="#" className="btn-outline rounded-full">
+                <Link href="mailto:info@informatics-olympiad.org" className="btn-outline rounded-full" target="_blank">
                   Support by Donating
                 </Link>
               </div>

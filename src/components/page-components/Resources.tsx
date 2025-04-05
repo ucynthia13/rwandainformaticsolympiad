@@ -161,7 +161,7 @@ const Resources = () => {
 
   return (
     <section className="py-16" id="resources">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto">
         <div className="text-center max-w-3xl mx-auto mb-10">
           <h2 className="text-3xl md:text-4xl font-bold text-olympiad-navy mb-6">
             Learning Resources

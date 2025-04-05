@@ -87,7 +87,7 @@ const Eligibility = () => {
             </h2>
             <div className="h-1 w-20 bg-olympiad-blue mx-auto mb-6"></div>
             <p className="text-olympiad-gray max-w-md mx-auto text-lg">
-              Find out the stages we go through to select the best Rwanda's representatives.
+              Find out the stages we go through to select the best Rwanda&apos;s representatives.
             </p>
           </div>
 

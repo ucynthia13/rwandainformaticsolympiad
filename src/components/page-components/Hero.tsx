@@ -27,7 +27,7 @@ const Hero = () => {
               </h1>
 
               <p className="mt-8 text-lg text-olympiad-gray">
-                Join Rwanda&apos;s first informatics competition for high
+                Join Rwanda Informatics Olympiad, a national informatics competition for high
                 schoolers, encouraging problem-solving skills and innovation in
                 programming, designed for young enthusiasts aged 20 and below.
               </p>

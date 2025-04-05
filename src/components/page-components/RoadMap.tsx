@@ -124,7 +124,7 @@ const RoadMap = () => {
                           : "Upcoming"}
                       </div>
                     </div>
-                    <h3 className={`font-semibold text-sm ${statusClasses.textColor}`}>
+                    <h3 className={`font-semibold text-[14px]${statusClasses.textColor}`}>
                       {event.title}
                     </h3>
                     <p className="text-olympiad-gray text-[15px] py-2">{event.description}</p>

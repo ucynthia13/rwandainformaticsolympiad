@@ -7,6 +7,7 @@ import {
   Phone,
   Instagram,
   Linkedin,
+  Github,
 } from "lucide-react";
 
 const Footer = () => {
@@ -45,18 +46,28 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/rwanda_informartics_olympiad/"
                 className="bg-white/10 hover:bg-white/20 p-2 rounded-full transition-colors"
                 aria-label="Instagram"
+                target="_blank"
               >
                 <Instagram size={18} />
               </a>
               <a
-                href="https://github.com"
+                href="https://rw.linkedin.com/company/rwanda-informatics-olympiad?trk=public_post_feed-actor-name "
                 className="bg-white/10 hover:bg-white/20 p-2 rounded-full transition-colors"
-                aria-label="GitHub"
+                aria-label="LinkedIn"
+                target="_blank"
               >
                 <Linkedin size={18} />
+              </a>
+              <a
+                href="https://github.com/rwanda-informatics-olympiad"
+                className="bg-white/10 hover:bg-white/20 p-2 rounded-full transition-colors"
+                aria-label="GitHub"
+                target="_blank"
+              >
+                <Github size={18} />
               </a>
             </div>
           </div>

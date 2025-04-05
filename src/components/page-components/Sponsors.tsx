@@ -33,9 +33,9 @@ export default function Sponsors() {
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-olympiad-navy mb-6">
-            Champions of Young Talent
+            Our Sponsors & Partners
           </h2>
-          <div className="h-1 w-20 bg-olympiad-blue mx-auto mb-6"></div>
+          <div className="h-1 w-24 bg-olympiad-blue mx-auto mb-6"></div>
           <p className="text-olympiad-gray text-lg">
             Rwanda Informatics Olympiad is proudly supported by leading
             technology companies and educational institutions committed to

@@ -111,7 +111,7 @@ const Navbar = () => {
             ))}
 
             <Link
-              href="#"
+              href="mailto:info@informatics-olympiad.org"
               className="ml-2 px-4 py-2 bg-olympiad-blue text-white rounded-full shadow-sm hover:bg-olympiad-blue/90 transition-all"
             >
               Donate
@@ -154,7 +154,7 @@ const Navbar = () => {
             ))}
 
             <Link
-              href="#"
+              href="mailto:info@informatics-olympiad.org"
               className="mt-4 px-6
                py-3 bg-olympiad-blue text-white rounded-full text-center "
               onClick={() => setIsOpen(false)}

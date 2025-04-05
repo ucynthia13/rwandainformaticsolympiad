@@ -9,92 +9,106 @@ const Resources = () => {
   
   type ResourceColor = 'blue' | 'emerald' | 'purple' | 'amber';
 
-  const resourceCategories: { title: string; icon: JSX.Element; color: ResourceColor; resources: { title: string; description: string; link: string; }[]; }[] = [
+  const resourceCategories: { title: string; icon: JSX.Element; color: ResourceColor; resources: { title: string; description?: string; link: string; }[]; }[] = [
     {
-      title: "Learning Materials",
-      icon: <Book className="h-6 w-6 text-emerald-600" />,
+      title: "Web Platforms",
+      icon: <Code className="h-6 w-6 text-emerald-600" />,
       color: "emerald",
       resources: [
         {
-          title: "Introduction to Algorithms",
-          description: "A beginner's guide to algorithms.",
-          link: "/resources/intro-algorithms",
+          title: "USACO",
+          description: "Pre-college Computer Science contests in the U.S.",
+          link: "https://usaco.guide/",
         },
         {
-          title: "Competitive Programming Handbook",
-          description: "Comprehensive techniques guide.",
-          link: "/resources/cp-handbook",
+          title: "Visualgo",
+          description: "Visualize algorithms and data structures.",
+          link: "https://visualgo.net/en",
         },
         {
-          title: "Data Structures Guide",
-          description: "Essential data structures explained.",
-          link: "/resources/data-structures",
+          title: "USACO Training Program Gateway",
+          description: "USACO training resources.",
+          link: "https://train.usaco.org/usacogate",
         }
       ]
     },
     {
-      title: "Practice Problems",
-      icon: <Code className="h-6 w-6 text-blue-600" />,
+      title: "Books",
+      icon: <Book className="h-6 w-6 text-blue-600" />,
       color: "blue",
       resources: [
         {
-          title: "Beginner Problem Set",
-          description: "Entry-level problems to practice.",
-          link: "/problems/beginner",
+          title: "Competitive Programming Handbook",
+          link: "https://cses.fi/book/book.pdf",
         },
         {
-          title: "Previous Olympiad Problems",
-          description: "Problems from past competitions.",
-          link: "/problems/olympiad-archive",
+          title: "Introduction to Algorithms",
+          link: "https://drive.google.com/file/d/1PwHRRkkjiE4tQJl5m1MOq6cNqAGSKPmV/view",
         },
         {
-          title: "Weekly Challenges",
-          description: "New problems every week.",
-          link: "/problems/weekly",
+          title: "Algortithm Design",
+          link: "https://drive.google.com/file/d/1wKy-wGuCYfRx1DH48vZHl5JA4nkhOmwC/view",
+        },
+        {
+          title: "Algorithmics: The Spirit of Computing",
+          link: "https://drive.google.com/file/d/1m9-9Kw8EM4sahuWgF8UONigmyXFad6Mz/view",
+        },
+        {
+          title: "Practice Problems",
+          link: "https://docs.google.com/spreadsheets/d/1-499z-WtsthQPYU_rmJ3PNCGALA4NBaEodBYyPhmjx8/edit?gid=84654839#gid=84654839",
         }
       ]
     },
     {
-      title: "Tutorials & Videos",
+      title: "Code editors",
       icon: <FileText className="h-6 w-6 text-purple-600" />,
       color: "purple",
       resources: [
         {
-          title: "Dynamic Programming",
-          description: "Comprehensive DP tutorial.",
-          link: "/tutorials/dynamic-programming",
+          title: "Codeblocks",
+          description: "The free C/C++ IDE.",
+          link: "https://www.codeblocks.org/#google_vignette",
         },
         {
-          title: "Competition Strategy",
-          description: "Approach problems efficiently.",
-          link: "/tutorials/competition-strategy",
+          title: "dEV-C++",
+          description: "A free C/C++ IDE.",
+          link: "https://www.bloodshed.net/",
         },
         {
-          title: "C++ for Competitions",
-          description: "C++ features for competitions.",
-          link: "/tutorials/cpp-for-competitions",
+          title: "Vim",
+          description: "A a powerful, free, and open-source, modal text editor.",
+          link: "https://www.vim.org/",
+        },
+        {
+          title: "Emacs",
+          description: "A highly extensible and customizable text editor.",
+          link: "https://www.gnu.org/software/emacs/",
         }
       ]
     },
     {
-      title: "Competition Resources",
+      title: "Contests Platforms",
       icon: <Award className="h-6 w-6 text-amber-600" />,
       color: "amber",
       resources: [
         {
-          title: "IOI Syllabus",
-          description: "Official competition syllabus.",
-          link: "/competition/syllabus",
+          title: "Codeforces",
+          link: "https://codeforces.com/",
         },
         {
-          title: "Competition Rules",
-          description: "Guidelines and regulations.",
-          link: "/competition/rules",
+          title: "Online Judge",
+          link: "https://onlinejudge.org/",
         },
         {
-          title: "IDE Setup Guide",
-          description: "Set up your coding environment.",
-          link: "/competition/ide-setup",
+          title: "Sphere Online Judge",
+          link: "https://www.spoj.com/",
+        },        {
+          title: "Leetcode",
+          link: "https://leetcode.com/",
+        },
+        {
+          title: "Kattis",
+          link: "https://open.kattis.com/",
         }
       ]
     }
@@ -105,7 +119,7 @@ const Resources = () => {
       ...category,
       resources: category.resources.filter(resource => 
         resource.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        resource.description.toLowerCase().includes(searchTerm.toLowerCase())
+        resource.description?.toLowerCase().includes(searchTerm.toLowerCase())
       )
     };
   }).filter(category => category.resources.length > 0);
@@ -181,7 +195,7 @@ const Resources = () => {
                         key={resourceIndex}
                         className={`block rounded-lg p-3 bg-white border border-gray-100 hover:shadow-md transition-all`}
                       >
-                        <h4 className={`font-semibold ${colorClasses.text} flex items-center text-base`}>
+                        <h4 className={`font-semibold  ${colorClasses.text} flex items-center text-base`}>
                           {resource.title}
                           <ChevronRight className="ml-1 h-4 w-4" />
                         </h4>

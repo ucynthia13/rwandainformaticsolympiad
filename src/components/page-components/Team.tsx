@@ -81,7 +81,7 @@ const Team = () => {
       },
     },
     {
-      name: "Hakim Nshyimiyimana",
+      name: "Hakim Nshimiyimana",
       role: "Advanced Data Structures",
       image: "/assets/images/hakim.jpg",
       socials: {
@@ -137,7 +137,7 @@ const Team = () => {
     },
     {
       name: "Kelly Irakoze Ntawigenga",
-      role: "Problem Design",
+      role: "Machine Learning",
       image: "/assets/images/kelly.jpeg",
       socials: {
         linkedin: "https://www.linkedin.com/in/irakoze-ntawigenga-kelly-bb194a287/",

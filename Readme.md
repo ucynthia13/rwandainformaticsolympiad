@@ -5,7 +5,7 @@ RIO is a national competition for high school students, promoting algorithmic an
 ## 🌐 Live Website
 
 Visit the Rwanda Informatics Olympiad website here:  
-🔗 [https://rwandainformaticsolympiad.onrender.com](https://rwandainformaticsolympiad.onrender.com)
+🔗 [https://rwandainformaticsolympiad.vercel.app/](https://rwandainformaticsolympiad.vercel.app/)
 
 
 ## 🌐 Features  

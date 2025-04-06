@@ -147,7 +147,7 @@ const Footer = () => {
               <li className="flex items-center">
                 <Mail className="h-5 w-5 text-olympiad-blue mr-3" />
                 <a
-                  href="mailto:info@informatics-olympiad.org"
+                  href="mailto:rwandainformaticsolympiad@gmail.com"
                   className="text-gray-300 hover:text-white transition-colors"
                 >
                   Drop Us an Email

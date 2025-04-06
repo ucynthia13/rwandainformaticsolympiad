@@ -67,7 +67,7 @@ export default function Sponsors() {
 
         <div className="text-center mt-12">
           <Link
-            href="mailto:info@informatics-olympiad.org"
+            href="mailto:rwandainformaticsolympiad@gmail.com"
             className="items-center justify-center px-6 py-3 bg-olympiad-blue text-white rounded-full "
             target="_blank"
           >

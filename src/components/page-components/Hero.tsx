@@ -33,10 +33,11 @@ const Hero = () => {
               </p>
 
               <div className="mt-8 flex flex-wrap gap-4">
-                <Link href="#" className="btn-primary rounded-full">
+                <Link href="https://forms.gle/9r9tNce7VKcdtPxJ7" 
+                  target="_blank" className="btn-primary rounded-full">
                   Register Your School
                 </Link>
-                <Link href="mailto:info@informatics-olympiad.org" className="btn-outline rounded-full" target="_blank">
+                <Link href="mailto:rwandainformaticsolympiad@gmail.com" className="btn-outline rounded-full" target="_blank">
                   Support by Donating
                 </Link>
               </div>

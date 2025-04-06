@@ -154,7 +154,7 @@ const Navbar = () => {
             ))}
 
             <Link
-              href="mailto:info@informatics-olympiad.org"
+              href="mailto:rwandainformaticsolympiad@gmail.com"
               className="mt-4 px-6
                py-3 bg-olympiad-blue text-white rounded-full text-center "
               onClick={() => setIsOpen(false)}

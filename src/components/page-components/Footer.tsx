@@ -29,9 +29,9 @@ const Footer = () => {
             <div className="flex items-center space-x-2 mb-6">
               <div className="rounded-full overflow-clip">
                 <Image
-                  src={"/assets/images/rio.jpg"}
-                  width={32}
-                  height={32}
+                  src={"/assets/images/rio.webp"}
+                  width={36}
+                  height={36}
                   alt="logo"
                   className=""
                 />
@@ -120,7 +120,7 @@ const Footer = () => {
                 </button>
               </li>
               <li>
-                <a href="https://www.linkedin.com/company/rwanda-informatics-olympiad/posts/?feedView=all">
+                <a href="https://www.linkedin.com/company/rwanda-informatics-olympiad/posts/?feedView=all" target="_blank">
                   <button
                     className="text-gray-300 hover:text-white transition-colors"
                   >
@@ -138,7 +138,7 @@ const Footer = () => {
                 <Mail className="h-5 w-5 text-olympiad-blue mr-3" />
                 <a
                   href="mailto:rwandainformaticsolympiad@gmail.com"
-                  className="text-gray-300 hover:text-white transition-colors"
+                  className="text-gray-300 hover:text-white transition-colors cursor-pointer"
                 >
                   Drop Us an Email
                 </a>
@@ -146,8 +146,8 @@ const Footer = () => {
               <li className="flex items-center">
                 <Phone className="h-5 w-5 text-olympiad-blue mr-3" />
                 <a
-                  href="tel:+250794021594"
-                  className="text-gray-300 hover:text-white transition-colors"
+                  href="tel:+250780395904"
+                  className="text-gray-300 hover:text-white transition-colors cursor-pointer"
                 >
                   Leave Us a Call
                 </a>

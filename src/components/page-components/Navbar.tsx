@@ -82,7 +82,7 @@ const Navbar = () => {
           >
             <div className="rounded-full overflow-clip">
               <Image
-                src={"/assets/images/rio.jpg"}
+                src={"/assets/images/rio.webp"}
                 width={50}
                 height={50}
                 alt="logo"

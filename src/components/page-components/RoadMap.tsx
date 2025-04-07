@@ -35,7 +35,7 @@ const RoadMap = () => {
       description: "Students take a final test to determine the representatives to represent Rwanda at IOI."
     },
     {
-      year: "June 2025",
+      year: "July 2025",
       title: "International Olympiad in Bolivia",
       status: "upcoming",
       description: "Selected Students will represent Rwanda in IOI 2025 in Bolivia."

@@ -6,25 +6,25 @@ export default function Sponsors() {
   const sponsors = [
     {
       name: "Global Talent Fund",
-      logo: "/assets/images/gtf.jpg",
+      logo: "/assets/images/gtf.webp",
     },
     {
       name: "Ministry of ICT & Innovation",
-      logo: "/assets/images/minict.png",
+      logo: "/assets/images/minict.webp",
     },
     {
       name: "AIMS Rwanda",
-      logo: "/assets/images/aims.jpeg",
+      logo: "/assets/images/aims.webp",
     },
 
     {
       name: "Hence Technologies",
-      logo: "/assets/images/hence.png",
+      logo: "/assets/images/hence.wepb",
     },
     
     {
       name: "Ministry of Education",
-      logo: "/assets/images/minict.png",
+      logo: "/assets/images/minict.webp",
     },
   ];
 

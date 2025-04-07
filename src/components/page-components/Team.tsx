@@ -10,7 +10,7 @@ const Team = () => {
     {
       name: "Jose Esperazano",
       role: "Coach",
-      image: "/assets/images/jose_1.jpg",
+      image: "/assets/images/jose_1.webp",
       socials: {
         linkedin: "/",
         email: "josealanesparza@gmail.com",
@@ -19,7 +19,7 @@ const Team = () => {
     {
       name: "Arun shanmuganathan",
       role: "Coach",
-      image: "/assets/images/arun.jpeg",
+      image: "/assets/images/arun.webp",
       socials: {
         linkedin: "https://www.linkedin.com/in/arun-shanmuganathan-6ba86062/",
         email: "shan.arun@gmail.com",
@@ -28,7 +28,7 @@ const Team = () => {
     {
       name: "Joel Lee",
       role: "Coach",
-      image: "/assets/images/joel.jpeg",
+      image: "/assets/images/joel.webp",
       socials: {
         linkedin:
           "https://www.linkedin.com/in/j0el/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=sg",
@@ -38,7 +38,7 @@ const Team = () => {
     {
       name: "Obed Nsanzimfura",
       role: "Coach",
-      image: "/assets/images/obed.jpeg",
+      image: "/assets/images/obed.webp",
       socials: {
         linkedin: "https://www.linkedin.com/in/obed-nsanzimfura/",
         email: "senga.obed@gmail.com",
@@ -47,7 +47,7 @@ const Team = () => {
     {
       name: "Hirwa Arnold",
       role: "Coach",
-      image: "/assets/images/arnold.jpeg",
+      image: "/assets/images/arnold.webp",
       socials: {
         linkedin: "https://www.linkedin.com/in/hirwa-arnold-7464bb229/",
         email: "arnold.hirw@gmail.com",
@@ -57,7 +57,7 @@ const Team = () => {
     {
       name: "Kagaba Etienne",
       role: "Coach",
-      image: "/assets/images/kagaba.jpeg",
+      image: "/assets/images/kagaba.webp",
       socials: {
         linkedin: "https://linkedin.com/in/kagabaetienne",
         email: "kagabaetienne04@gmail.com",
@@ -66,7 +66,7 @@ const Team = () => {
     {
       name: "Afsa Umutoniwase",
       role: "Coach",
-      image: "/assets/images/Afsa.jpg",
+      image: "/assets/images/Afsa.webp",
       socials: {
         linkedin: "https://linkedin.com/in/afsa-umutoniwase-720952278/",
         email: "a.umutoniwa@alustudent.com",
@@ -75,7 +75,7 @@ const Team = () => {
     {
       name: "Niyogisubizo Jehovanis",
       role: "Coach",
-      image: "/assets/images/jehovanis.jpeg",
+      image: "/assets/images/jehovanis.webp",
       socials: {
         linkedin: "https://www.linkedin.com/in/johovanis/",
         email: "gisubizo.jovan@gmail.com",
@@ -84,7 +84,7 @@ const Team = () => {
     {
       name: "Hakim Nshimiyimana",
       role: "Coach",
-      image: "/assets/images/hakim.jpg",
+      image: "/assets/images/hakim.webp",
       socials: {
         linkedin: "https://www.linkedin.com/in/hakim-nshimiyimana-b767412ba/",
         email: "nshimiyimanahakim7@gmail.com",
@@ -93,7 +93,7 @@ const Team = () => {
     {
       name: "Norbert Ndayisenga",
       role: "Coach",
-      image: "/assets/images/norbert.jpeg",
+      image: "/assets/images/norbert.webp",
       socials: {
         linkedin: "https://www.linkedin.com/in/ndayisenganorbert/",
         email: "norbertndayisenga@gmail.com",
@@ -102,7 +102,7 @@ const Team = () => {
     {
       name: "Ishimwe Frank",
       role: "Coach",
-      image: "/assets/images/frank.jpeg",
+      image: "/assets/images/frank.webp",
       socials: {
         linkedin: "https://www.linkedin.com/in/frank-ishimwe-2634ba284/",
         email: "ishimwefrank147@gmail.com",
@@ -111,7 +111,7 @@ const Team = () => {
     {
       name: "Sezikeye Jado Fils",
       role: "Coach",
-      image: "/assets/images/jado.jpeg",
+      image: "/assets/images/jado.webp",
       socials: {
         linkedin: "#",
         email: "jasezikeye50@gmail.com",
@@ -120,7 +120,7 @@ const Team = () => {
     {
       name: "Niyokwizera Jean D'Amour",
       role: "Coach",
-      image: "/assets/images/brojeid.jpg",
+      image: "/assets/images/brojeid.webp",
       socials: {
         linkedin: "#",
         email: "niyokwizerajd123@gmail.com",
@@ -130,7 +130,7 @@ const Team = () => {
     {
       name: "Cynthia Umwali",
       role: "Coach",
-      image: "/assets/images/cynthia.png",
+      image: "/assets/images/cynthia.webp",
       socials: {
         linkedin: "https://linkedin.com/in/cynthiaumwalii",
         email: "cynthiaaa877@gmail.com",
@@ -139,7 +139,7 @@ const Team = () => {
     {
       name: "Kelly Irakoze Ntawigenga",
       role: "Coach",
-      image: "/assets/images/kelly.jpeg",
+      image: "/assets/images/kelly.webp",
       socials: {
         linkedin:
           "https://www.linkedin.com/in/irakoze-ntawigenga-kelly-bb194a287/",

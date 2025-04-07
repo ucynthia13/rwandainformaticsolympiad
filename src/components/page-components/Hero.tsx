@@ -11,7 +11,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="relative min-h-screen flex flex-col justify-center overflow-hidden bg-[url('/assets/images/coaches.jpg')] bg-cover bg-center" id="hero">
+    <div className="relative min-h-screen flex flex-col justify-center overflow-hidden bg-[url('/assets/images/coaches.webp')] bg-cover bg-center" id="hero">
       <div className="absolute inset-0 bg-gradient-to-r from-white to-blue-50/80"></div>
       <div className="container mx-auto px-6 pt-24 pb-16 md:pt-32 md:pb-24 relative z-10">
         <div className="flex flex-col md:flex-row items-center">

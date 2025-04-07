@@ -9,7 +9,7 @@ const Team = () => {
   const teamMembers = [
     {
       name: "Jose Esperazano",
-      role: "Country Coordinator",
+      role: "Coach",
       image: "/assets/images/jose_1.jpg",
       socials: {
         linkedin: "/",
@@ -18,7 +18,7 @@ const Team = () => {
     },
     {
       name: "Arun shanmuganathan",
-      role: "Olympiad Advisor",
+      role: "Coach",
       image: "/assets/images/arun.jpeg",
       socials: {
         linkedin: "https://www.linkedin.com/in/arun-shanmuganathan-6ba86062/",
@@ -27,16 +27,17 @@ const Team = () => {
     },
     {
       name: "Joel Lee",
-      role: "Coach & Technical Advisor",
+      role: "Coach",
       image: "/assets/images/joel.jpeg",
       socials: {
-        linkedin: "https://www.linkedin.com/in/j0el/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=sg",
+        linkedin:
+          "https://www.linkedin.com/in/j0el/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=sg",
         email: "kosbekokos@gmail.com",
       },
     },
     {
       name: "Obed Nsanzimfura",
-      role: "Olympiad Manager",
+      role: "Coach",
       image: "/assets/images/obed.jpeg",
       socials: {
         linkedin: "https://www.linkedin.com/in/obed-nsanzimfura/",
@@ -45,7 +46,7 @@ const Team = () => {
     },
     {
       name: "Hirwa Arnold",
-      role: "Algorithms",
+      role: "Coach",
       image: "/assets/images/arnold.jpeg",
       socials: {
         linkedin: "https://www.linkedin.com/in/hirwa-arnold-7464bb229/",
@@ -55,7 +56,7 @@ const Team = () => {
 
     {
       name: "Kagaba Etienne",
-      role: "Data Structures",
+      role: "Coach",
       image: "/assets/images/kagaba.jpeg",
       socials: {
         linkedin: "https://linkedin.com/in/kagabaetienne",
@@ -64,7 +65,7 @@ const Team = () => {
     },
     {
       name: "Afsa Umutoniwase",
-      role: "Competition Coordinator",
+      role: "Coach",
       image: "/assets/images/Afsa.jpg",
       socials: {
         linkedin: "https://linkedin.com/in/afsa-umutoniwase-720952278/",
@@ -73,7 +74,7 @@ const Team = () => {
     },
     {
       name: "Niyogisubizo Jehovanis",
-      role: "Algorithmic Complexity",
+      role: "Coach",
       image: "/assets/images/jehovanis.jpeg",
       socials: {
         linkedin: "https://www.linkedin.com/in/johovanis/",
@@ -82,7 +83,7 @@ const Team = () => {
     },
     {
       name: "Hakim Nshimiyimana",
-      role: "Advanced Data Structures",
+      role: "Coach",
       image: "/assets/images/hakim.jpg",
       socials: {
         linkedin: "https://www.linkedin.com/in/hakim-nshimiyimana-b767412ba/",
@@ -91,7 +92,7 @@ const Team = () => {
     },
     {
       name: "Norbert Ndayisenga",
-      role: "Communications & Outreach",
+      role: "Coach",
       image: "/assets/images/norbert.jpeg",
       socials: {
         linkedin: "https://www.linkedin.com/in/ndayisenganorbert/",
@@ -100,7 +101,7 @@ const Team = () => {
     },
     {
       name: "Ishimwe Frank",
-      role: "Dynamic Programming",
+      role: "Coach",
       image: "/assets/images/frank.jpeg",
       socials: {
         linkedin: "https://www.linkedin.com/in/frank-ishimwe-2634ba284/",
@@ -109,7 +110,7 @@ const Team = () => {
     },
     {
       name: "Sezikeye Jado Fils",
-      role: "Graph Algorithms",
+      role: "Coach",
       image: "/assets/images/jado.jpeg",
       socials: {
         linkedin: "#",
@@ -118,7 +119,7 @@ const Team = () => {
     },
     {
       name: "Niyokwizera Jean D'Amour",
-      role: "Computational Geometry",
+      role: "Coach",
       image: "/assets/images/brojeid.jpg",
       socials: {
         linkedin: "#",
@@ -128,7 +129,7 @@ const Team = () => {
 
     {
       name: "Cynthia Umwali",
-      role: "Problem Design",
+      role: "Coach",
       image: "/assets/images/cynthia.png",
       socials: {
         linkedin: "https://linkedin.com/in/cynthiaumwalii",
@@ -137,10 +138,11 @@ const Team = () => {
     },
     {
       name: "Kelly Irakoze Ntawigenga",
-      role: "Machine Learning",
+      role: "Coach",
       image: "/assets/images/kelly.jpeg",
       socials: {
-        linkedin: "https://www.linkedin.com/in/irakoze-ntawigenga-kelly-bb194a287/",
+        linkedin:
+          "https://www.linkedin.com/in/irakoze-ntawigenga-kelly-bb194a287/",
         email: "irakozekelly41@gmail.com",
       },
     },
@@ -155,7 +157,8 @@ const Team = () => {
           </h2>
           <div className="h-1 w-20 bg-olympiad-blue mx-auto mb-6"></div>
           <p className="text-olympiad-gray max-w-md mx-auto text-lg">
-          Meet the team leading Rwanda&apos;s international informatics competitions.
+            Meet the team leading Rwanda&apos;s international informatics
+            competitions.
           </p>
         </div>
 
@@ -171,6 +174,12 @@ const Team = () => {
                   alt={member.name}
                   fill
                   className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 
+           (max-width: 1200px) 50vw, 
+           20vw"
+                  priority={index < 5}
+                  placeholder="blur"
+                  blurDataURL={member.image}
                 />
               </div>
               <div className="p-3 flex flex-col justify-between flex-1">

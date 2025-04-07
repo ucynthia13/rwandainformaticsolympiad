@@ -11,13 +11,11 @@ import {
 } from "lucide-react";
 
 const Footer = () => {
-  // Function to scroll to a specific section
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
-      // Close mobile menu if open
       window.scrollTo({
-        top: element.offsetTop - 100, // Offset for navbar height
+        top: element.offsetTop - 100, 
         behavior: "smooth"
       });
     }
@@ -93,15 +91,15 @@ const Footer = () => {
               </li>
               <li>
                 <button
-                  onClick={() => scrollToSection("roadmap")}
+                  onClick={() => scrollToSection("timeline")}
                   className="text-gray-300 hover:text-white transition-colors"
                 >
-                  Events
+                  Timeline
                 </button>
               </li>
               <li>
                 <button
-                  onClick={() => scrollToSection("coaches")}
+                  onClick={() => scrollToSection("team")}
                   className="text-gray-300 hover:text-white transition-colors"
                 >
                   Team
@@ -115,15 +113,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li>
                 <button
-                  onClick={() => scrollToSection("faq")}
-                  className="text-gray-300 hover:text-white transition-colors"
-                >
-                  FAQ
-                </button>
-              </li>
-              <li>
-                <button
-                  onClick={() => scrollToSection("team")}
+                  onClick={() => scrollToSection("sponsors")}
                   className="text-gray-300 hover:text-white transition-colors"
                 >
                   Our Sponsors
